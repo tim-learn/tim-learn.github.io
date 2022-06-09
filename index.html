@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="ali.css" type="text/css" />
+<style>
+#paper{color: #A52A2A}
+#code{color: #FA8072}
+#slides{color: #BC8F8F}
+#comments{width: 700px; font-family: Helvetica}
+#abstract{width: 700px; font-size: 1}
+#papertitle{width: 700px; font-size:3}
+</style>
+<title>Jian Liang</title>
+
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+<div class="menu-item"><a href="experience.html" class="current">Experience</a></div>
+<div class="menu-item"><a href="education.html">Education</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="publications.html">Publications</a></div>
+<div class="menu-item"><a href="activity.html">Activity</a></div>
+<div class="menu-item"><a href="miscellaneous.html">Miscellaneous</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>About Me</h1>
+</div>
+<p><div><img src="assets/liangjian@sigir.jpg" alt="Jian Liang" style="float:left" hspace="10" width="200" height="280"></div> 
+</p>
+<p>
+<font size="4"><b>梁坚 (Jian Liang, Tim)</b></font><br />
+Associate Professor<br />
+Center for Research on Intelligent Perception and Computing<br />
+Institute of Automation, Chinese Academy of Sciences<br /><br />
+Room 1505, Intelligent Building, 95 Zhongguancun East Road<br />
+100190, Haidian District, Beijing, China<br><br>
+<font size='2'>&#x1F47B</font><a href="assets/liangjian-cv.pdf" target=&ldquo;blank&rdquo;>Resume</a><br />
+<font size='4'>&#x265F</font><a href="https://github.com/tim-learn" target=&ldquo;blank&rdquo;>Github</a><br />
+<font size='4'>&#x1F396</font><a href="https://scholar.google.com/citations?user=eY8i-mQAAAAJ&amp;hl=en" target=&ldquo;blank&rdquo;>Google Scholar</a><br />
+<font size='2'>&#x1F4C4</font><a href="https://arxiv.org/a/liang_j_1.html" target=&ldquo;blank&rdquo;>Arxiv</a><br />
+&nbsp;<font size='2'>&#x21F0</font> <a href="mailto:liangjian92@gmail.com" target=&ldquo;blank&rdquo;>liangjian92&#x1F300gmail.com</a> or <a href="mailto:jian.liang@nlpr.ia.ac.cn" target=&ldquo;blank&rdquo;>jian.liang&#x1F300nlpr.ia.ac.cn</a>
+</p>
+<br />
+
+<p>Before joining CASIA in June 2021, I was a research fellow at the Vision and Learning Group, National University of Singapore, working with <a href="https://sites.google.com/site/jshfeng/">Dr. Jiashi Feng</a> from June 2019 to April 2021.
+I obtained Ph.D. in <i>Pattern Recognition and Intelligent Systems</i> from CASIA in Jan 2019, under the supervision of <a href="http://cripac.ia.ac.cn/en/EN/column/item80.shtml">Prof. Tieniu Tan</a> and co-supervision of <a href="http://people.ucas.ac.cn/~heran">Prof. Ran He</a> and <a href="http://cripac.ia.ac.cn/en/EN/column/item110.shtml">Prof. Zhenan Sun</a>, and received my bachelor degree in <i>Automation</i> from Xi'an Jiaotong University in June 2013.</p>
+<p>My current research interests mainly focus on representation learning, knowledge transfer, trustworthy AI (including security, privacy, or robustness in AI), and their applications in various computer vision problems.</p>
+
+<div class="infoblock">
+<div class="blockcontent">
+<p><p style="text-align:center;"><i>
+I am open to discussion or collaboration. Feel free to drop me an email if you're interested.
+<!--<ul>
+	<li> I am open to discussion or collaboration. Feel free to drop me an email if you're interested.
+</ul>-->
+</i></p></p>
+</div></div>
+
+<h1>Recent Publications (<a href="publications.html">Full list</a>)</h1>
+<details><summary>
+<span id="papertitle">DINE: Domain Adaptation from Single and Multiple Black-box Predictors</span></a><br>
+</summary>
+<div id="abstract"><i>
+Abstract: To ease the burden of labeling, unsupervised domain adaptation (UDA) aims to transfer knowledge in previous and related labeled datasets (sources) to a new unlabeled dataset (target). Despite impressive progress, prior methods always need to access the raw source data and develop data-dependent alignment approaches to recognize the target samples in a transductive learning manner, which may raise privacy concerns from source individuals. Several recent studies resort to an alternative solution by exploiting the well-trained white-box model from the source domain, yet, it may still leak the raw data through generative adversarial learning. This paper studies a practical and interesting setting for UDA, where only black-box source models (i.e., only network predictions are available) are provided during adaptation in the target domain. To solve this problem, we propose a new two-step knowledge adaptation framework called DIstill and fine-tuNE (DINE). Taking into consideration the target data structure, DINE first distills the knowledge from the source predictor to a customized target model, then fine-tunes the distilled model to further fit the target domain. Besides, neural networks are not required to be identical across domains in DINE, even allowing effective adaptation on a low-resource device. Empirical results on three UDA scenarios (i.e., single-source, multi-source, and partial-set) confirm that DINE achieves highly competitive performance compared to state-of-the-art data-dependent approaches.
+</i></div>
+</details>
+
+<b>Jian Liang</b>, Dapeng Hu, Jiashi Feng, Ran He.<br>
+<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022 (Oral)</i><br>
+[<a href="https://arxiv.org/pdf/2104.01539.pdf"><span id="paper">Paper</span></a>]
+[<a href="https://github.com/tim-learn/DINE"><span id="code">Code</span></a>]
+<!-- [<a href="./xx"><span id="slides">Slides</span></a>] -->
+<br>
+<br>
+<div id="comments">This paper studies a practical and interesting setting for UDA, where only black-box source models (i.e., only network predictions are available) are provided during adaptation in the target domain.</div>
+<br>
+<br>
+
+<details><summary>
+<span id="papertitle">Mimicking the Oracle: An Initial Phase Decorrelation Approach for Class Incremental Learning</span></a><br>
+</summary>
+<div id="abstract"><i>
+Abstract: Class Incremental Learning (CIL) aims at learning a multi-class classifier in a phase-by-phase manner, in which only data of a subset of the classes are provided at each phase. Previous works mainly focus on mitigating forgetting in phases after the initial one. However, we find that improving CIL at its initial phase is also a promising direction. Specifically, we experimentally show that directly encouraging CIL Learner at the initial phase to output similar representations as the model jointly trained on all classes can greatly boost the CIL performance. Motivated by this, we study the difference between a naïvely-trained initial-phase model and the oracle model. Specifically, since one major difference between these two models is the number of training classes, we investigate how such difference affects the model representations. We find that, with fewer training classes, the data representations of each class lie in a long and narrow region; with more training classes, the representations of each class scatter more uniformly. Inspired by this observation, we propose Class-wise Decorrelation (CwD) that effectively regularizes representations of each class to scatter more uniformly, thus mimicking the model jointly trained with all classes (i.e., the oracle model). Our CwD is simple to implement and easy to plug into existing methods. Extensive experiments on various benchmark datasets show that CwD consistently and significantly improves the performance of existing state-of-the-art methods by around 1\% to 3\%.
+</i></div>
+</details>
+
+Yujun Shi, Kuangqi Zhou, <b>Jian Liang</b>, Zihang Jiang, Jiashi Feng, Philip Torr, Song Bai, Vincent Y. F. Tan.<br>
+<i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022</i><br>
+[<a href="https://arxiv.org/pdf/2112.04731.pdf"><span id="paper">Paper</span></a>]
+[<a href="https://github.com/Yujun-Shi/CwD"><span id="code">Code</span></a>]
+<!-- [<a href="./xx"><span id="slides">Slides</span></a>] -->
+<br>
+<br>
+<div id="comments">We propose a Class-wise Decorrelation regularizer that enables CIL learner at initial phase to mimic representations produced by the oracle model (the model jointly trained on all classes) and thus boosting Class Incremental Learning.</div>
+<br>
+<br>
+
+
+<details><summary>
+<span id="papertitle">Heterogeneous Face Recognition via Face Synthesis with Identity-Attribute Disentanglement</span></a><br>
+</summary>
+<div id="abstract"><i>
+Abstract: Heterogeneous Face Recognition (HFR) aims to match faces across different domains (e.g., visible to near-infrared images), which has been widely applied in authentication and forensics scenarios. However, HFR is a challenging problem because of the large cross-domain discrepancy, limited heterogeneous data pairs, and large variation of facial attributes. To address these challenges, we propose a new HFR method from the perspective of heterogeneous data augmentation, named Face Synthesis with Identity-Attribute Disentanglement (FSIAD). Firstly, the identity-attribute disentanglement (IAD) decouples face images into identity-related representations and identity-unrelated representations (called attributes), and then decreases the correlation between identities and attributes. Secondly, we devise a face synthesis module (FSM) to generate a large number of images with stochastic combinations of disentangled identities and attributes for enriching the attribute diversity of synthetic images. Both the original images and the synthetic ones are utilized to train the HFR network for tackling the challenges and improving the performance of HFR. Extensive experiments on five HFR databases validate that FSIAD obtains superior performance than previous HFR approaches. Particularly, FSIAD obtains 4.8% improvement over state of the art in terms of VR@FAR=0.01% on LAMP-HQ, the largest HFR database so far.
+</i></div>
+</details>
+
+Ziming Yang, <b>Jian Liang</b>, Chaoyou Fu, Mandi Luo, Xiao-Yu Zhang.<br>
+<i>IEEE Transactions on Information Forensics and Security (TIFS), 2022</i><br>
+[<a href="https://ieeexplore.ieee.org/abstract/document/9737477"><span id="paper">Paper</span></a>]
+<!-- [<a href="./xx"><span id="code">Code</span></a>] -->
+<!-- [<a href="./xx"><span id="slides">Slides</span></a>] -->
+<br>
+<br>
+<div id="comments">We propose a new heterogeneous face recognition method from the perspective of heterogeneous data augmentation.</div>
+<br>
+<br>
+
+<br>
+<div id="footer">
+<div id="footer-text">
+Last updated on June 9th, 2022. The CSS file is adapted from <a href="https://people.eecs.berkeley.edu/~brecht/" target="blank">Ben Recht's webpage</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
