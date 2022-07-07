@@ -113,19 +113,25 @@ Yujun Shi, Kuangqi Zhou, <b>Jian Liang</b>, Zihang Jiang, Jiashi Feng, Philip To
 
 
 <details><summary>
-<span id="papertitle">Heterogeneous Face Recognition via Face Synthesis with Identity-Attribute Disentanglement</span></a><br>
-</summary>
+<span id="papertitle">META: Mimicking Embedding via oThers' Aggregation for Generalizable Person Re-identification.
+</span></a><br></summary>
 <div id="paperabstract"><i>
-Abstract: Heterogeneous Face Recognition (HFR) aims to match faces across different domains (e.g., visible to near-infrared images), which has been widely applied in authentication and forensics scenarios. However, HFR is a challenging problem because of the large cross-domain discrepancy, limited heterogeneous data pairs, and large variation of facial attributes. To address these challenges, we propose a new HFR method from the perspective of heterogeneous data augmentation, named Face Synthesis with Identity-Attribute Disentanglement (FSIAD). Firstly, the identity-attribute disentanglement (IAD) decouples face images into identity-related representations and identity-unrelated representations (called attributes), and then decreases the correlation between identities and attributes. Secondly, we devise a face synthesis module (FSM) to generate a large number of images with stochastic combinations of disentangled identities and attributes for enriching the attribute diversity of synthetic images. Both the original images and the synthetic ones are utilized to train the HFR network for tackling the challenges and improving the performance of HFR. Extensive experiments on five HFR databases validate that FSIAD obtains superior performance than previous HFR approaches. Particularly, FSIAD obtains 4.8% improvement over state of the art in terms of VR@FAR=0.01% on LAMP-HQ, the largest HFR database so far.
-</i></div>
-</details>
+Abstract: Domain generalizable (DG) person re-identification (ReID) aims to test across unseen domains without access to the target domain data at training time, which is a realistic but challenging problem. 
+In contrast to methods assuming an identical model for different domains, Mixture of Experts (MoE) exploits multiple domain-specific networks for leveraging complementary information between domains, obtaining impressive results. 
+However, prior MoE-based DG ReID methods suffer from a large model size with the increase of the number of source domains, and most of them overlook the exploitation of domain-invariant characteristics. To handle the two issues above, this paper presents a new approach called Mimic Embedding via adapTive Aggregation ($\mathsf{META}$) for DG person ReID. 
+To avoid the large model size, experts in $\mathsf{META}$ do not adopt a branch network for each source domain but share all the parameters except for the batch normalization layers.
+Besides multiple experts, $\mathsf{META}$ leverages Instance Normalization (IN) and introduces it into a global branch to pursue invariant features across domains.
+Meanwhile, $\mathsf{META}$ considers the relevance of an unseen target sample and source domains via normalization statistics and develops an aggregation module to adaptively integrate multiple experts for mimicking unseen target domain. 
+Benefiting from a proposed consistency loss and an episodic training algorithm, $\mathsf{META}$ is expected to mimic embedding for a truly unseen target domain. 
+Extensive experiments verify that $\mathsf{META}$ surpasses state-of-the-art DG person ReID methods by a large margin.
+</i></div></details>
 
-Ziming Yang, <b>Jian Liang</b>, Chaoyou Fu, Mandi Luo, Xiao-Yu Zhang.<br>
-<i>IEEE Transactions on Information Forensics and Security (TIFS), 2022</i><br>
-[<a href="https://ieeexplore.ieee.org/abstract/document/9737477"><span id="paper">Paper</span></a>]
-<br>
-<br>
-<div id="comments">We propose a new heterogeneous face recognition method from the perspective of heterogeneous data augmentation.</div>
+Boqiang Xu, <b>Jian Liang</b>, Lingxiao He, Zhenan Sun.<br>
+<i>European Conference on Computer Vision (ECCV), 2022.</i><br>
+[<a href="https://arxiv.org/pdf/2112.08684.pdf"><span id="paper">Paper</span></a>]
+<br><br>
+
+<div id="comments">We propose a new domain generalization method for person re-identification.</div>
 <br>
 <br>
 
