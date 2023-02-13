@@ -312,7 +312,9 @@ Yanbo Fan, <b>Jian Liang</b>, Ran He, Bao-Gang Hu, Siwei Lyu.<br>
 <span id="papertitle">Towards Understanding and Mitigating Dimensional Collapse in Heterogeneous Federated Learning.
 </span></a><br></summary>
 <div id="abstract"><i>
+<dd><br>
 Abstract: Federated learning aims to train models collaboratively across different clients without sharing data for privacy considerations. However, one major challenge for this learning paradigm is the data heterogeneity problem, which refers to the discrepancies between the local data distributions among various clients. To tackle this problem, we first study how data heterogeneity affects the representations of the globally aggregated models. Interestingly, we find that heterogeneous data results in the global model suffering from severe dimensional collapse, in which representations tend to reside in a lower-dimensional space instead of the ambient space. Moreover, we observe a similar phenomenon on models locally trained on each client and deduce that the dimensional collapse on the global model is inherited from local models. In addition, we theoretically analyze the gradient flow dynamics to shed light on how data heterogeneity result in dimensional collapse for local models. To remedy this problem caused by the data heterogeneity, we propose FedDecorr, a novel method that can effectively mitigate dimensional collapse in federated learning. Specifically, FedDecorr applies a regularization term during local training that encourages different dimensions of representations to be uncorrelated. FedDecorr, which is implementation-friendly and computationally-efficient, yields consistent improvements over baselines on standard benchmark datasets.
+</dd><br>
 </i></div></details>
 
 Yujun Shi, <b>Jian Liang</b>, Wenqing Zhang, Vincent Tan, Song Bai.<br>
@@ -326,7 +328,9 @@ Yujun Shi, <b>Jian Liang</b>, Wenqing Zhang, Vincent Tan, Song Bai.<br>
 <span id="papertitle">Free Lunch for Domain Adversarial Training: Environment Label Smoothing.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: A fundamental challenge for machine learning models is how to generalize learned models for out-of-distribution (OOD) data. Among various approaches, exploiting invariant features by Domain Adversarial Training (DAT) received widespread attention. Despite its success, we observe training instability from DAT, mostly due to over-confident domain discriminator and environment label noise. To address this issue, we proposed Environment Label Smoothing (ELS), which encourages the discriminator to output soft probability, which thus reduces the confidence of the discriminator and alleviates the impact of noisy environment labels. We demonstrate, both experimentally and theoretically, that ELS can improve training stability, local convergence, and robustness to noisy environment labels. By incorporating ELS with DAT methods, we are able to yield state-of-art results on a wide range of domain generalization/adaptation tasks, particularly when the environment labels are highly noisy.
+</dd><br>
 </i></div></details>
 
 Yi-Fan Zhang, Xue Wang, <b>Jian Liang</b>, Zhang Zhang, Liang Wang, Rong Jin, Tieniu Tan.<br>
@@ -342,7 +346,9 @@ Yi-Fan Zhang, Xue Wang, <b>Jian Liang</b>, Zhang Zhang, Liang Wang, Rong Jin, Ti
 <span id="papertitle">Source Data-absent Unsupervised Domain Adaptation through Hypothesis Transfer and Labeling Transfer.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Unsupervised domain adaptation (UDA) aims to transfer knowledge from a related but different well-labeled source domain to a new unlabeled target domain. Most existing UDA methods require access to the source data, and thus are not applicable when the data are confidential and not shareable due to privacy concerns. This paper aims to tackle a realistic setting with only a classification model available trained over, instead of accessing to, the source data. To effectively utilize the source model for adaptation, we propose a novel approach called Source HypOthesis Transfer (SHOT), which learns the feature extraction module for the target domain by fitting the target data features to the frozen source classification module (representing classification hypothesis). Specifically, SHOT exploits both information maximization and self-supervised learning for the feature extraction module learning to ensure the target features are implicitly aligned with the features of unseen source data via the same hypothesis. Furthermore, we propose a new labeling transfer strategy, which separates the target data into two splits based on the confidence of predictions (labeling information), and then employ semi-supervised learning to improve the accuracy of less-confident predictions in the target domain. We denote labeling transfer as SHOT++ if the predictions are obtained by SHOT. Extensive experiments on both digit classification and object recognition tasks show that SHOT and SHOT++ achieve results surpassing or comparable to the state-of-the-arts, demonstrating the effectiveness of our approaches for various visual domain adaptation problems.
+</dd><br>
 </i></div></details>
 
 <b>Jian Liang</b>, Dapeng Hu, Yunbo Wang, Ran He, Jiashi Feng.<br>
@@ -357,7 +363,9 @@ Abstract:
 <span id="papertitle">Learning Feature Recovery Transformer for Occluded Person Re-identification.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: One major issue that challenges person re-identification (Re-ID) is the ubiquitous occlusion over the captured persons. There are two main challenges for the occluded person Re-ID problem, i.e. , the interference of noise during feature matching and the loss of pedestrian information brought by the occlusions. In this paper, we propose a new approach called Feature Recovery Transformer (FRT) to address the two challenges simultaneously, which mainly consists of visibility graph matching and feature recovery transformer. To reduce the interference of the noise during feature matching, we mainly focus on visible regions that appear in both images and develop a visibility graph to calculate the similarity. In terms of the second challenge, based on the developed graph similarity, for each query image, we propose a recovery transformer that exploits the feature sets of its k -nearest neighbors in the gallery to recover the complete features. Extensive experiments across different person Re-ID datasets, including occluded, partial and holistic datasets, demonstrate the effectiveness of FRT. Specifically, FRT significantly outperforms state-of-the-art results by at least 6.2% Rank- 1 accuracy and 7.2% mAP scores on the challenging Occluded-Duke dataset.
+</dd><br>
 </i></div></details>
 Boqiang Xu, Lingxiao He, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Zhenan Sun.<br>
 <i>IEEE Transactions on Image Processing (TIP), 2022.</i><br>
@@ -370,7 +378,9 @@ Boqiang Xu, Lingxiao He, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Zhenan Sun.<br>
 <span id="papertitle">Heterogeneous Face Recognition via Face Synthesis with Identity-Attribute Disentanglement.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Heterogeneous Face Recognition (HFR) aims to match faces across different domains ( e.g. , visible to near-infrared images), which has been widely applied in authentication and forensics scenarios. However, HFR is a challenging problem because of the large cross-domain discrepancy, limited heterogeneous data pairs, and large variation of facial attributes. To address these challenges, we propose a new HFR method from the perspective of heterogeneous data augmentation, named Face Synthesis with Identity-Attribute Disentanglement (FSIAD). Firstly, the identity-attribute disentanglement (IAD) decouples face images into identity-related representations and identity-unrelated representations (called attributes), and then decreases the correlation between identities and attributes. Secondly, we devise a face synthesis module (FSM) to generate a large number of images with stochastic combinations of disentangled identities and attributes for enriching the attribute diversity of synthetic images. Both the original images and the synthetic ones are utilized to train the HFR network for tackling the challenges and improving the performance of HFR. Extensive experiments on five HFR databases validate that FSIAD obtains superior performance than previous HFR approaches. Particularly, FSIAD obtains 4.8% improvement over state of the art in terms of VR@FAR=0.01% on LAMP-HQ, the largest HFR database so far.
+</dd><br>
 </i></div></details>
 
 Ziming Yang, <b>Jian Liang</b>, Chaoyou Fu, Mandi Luo, Xiao-Yu Zhang.<br>
@@ -383,7 +393,9 @@ Ziming Yang, <b>Jian Liang</b>, Chaoyou Fu, Mandi Luo, Xiao-Yu Zhang.<br>
 <span id="papertitle">Are You Stealing My Model? Sample Correlation for Fingerprinting Deep Neural Networks.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: An off-the-shelf model as a commercial service could be stolen by model stealing attacks, posing great threats to the rights of the model owner. Model fingerprinting aims to verify whether a suspect model is stolen from the victim model, which gains more and more attention nowadays. Previous methods always leverage the transferable adversarial examples as the model fingerprint, which is sensitive to adversarial defense or transfer learning scenarios. To address this issue, we consider the pairwise relationship between samples instead and propose a novel yet simple model stealing detection method based on SAmple Correlation (SAC). Specifically, we present SAC-w that selects wrongly classified normal samples as model inputs and calculates the mean correlation among their model outputs. To reduce the training time, we further develop SAC-m that selects CutMix Augmented samples as model inputs, without the need for training the surrogate models or generating adversarial examples. Extensive results validate that SAC successfully defends against various model stealing attacks, even including adversarial training or transfer learning, and detects the stolen models with the best performance in terms of AUC across different datasets and model architectures.
+</dd><br>
 </i></div></details>
 
 Jiyang Guan, <b>Jian Liang</b>, Ran He.<br>
@@ -397,7 +409,9 @@ Jiyang Guan, <b>Jian Liang</b>, Ran He.<br>
 <span id="papertitle">DINE: Domain Adaptation from Single and Multiple Black-box Predictors.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: To ease the burden of labeling, unsupervised domain adaptation (UDA) aims to transfer knowledge in previous and related labeled datasets (sources) to a new unlabeled dataset (target). Despite impressive progress, prior methods always need to access the raw source data and develop data-dependent alignment approaches to recognize the target samples in a transductive learning manner, which may raise privacy concerns from source individuals. Several recent studies resort to an alternative solution by exploiting the well-trained white-box model from the source domain, yet, it may still leak the raw data through generative adversarial learning. This paper studies a practical and interesting setting for UDA, where only black-box source models (i.e., only network predictions are available) are provided during adaptation in the target domain. To solve this problem, we propose a new two-step knowledge adaptation framework called DIstill and fine-tuNE (DINE). Taking into consideration the target data structure, DINE first distills the knowledge from the source predictor to a customized target model, then fine-tunes the distilled model to further fit the target domain. Besides, neural networks are not required to be identical across domains in DINE, even allowing effective adaptation on a low-resource device. Empirical results on three UDA scenarios (i.e., single-source, multi-source, and partial-set) confirm that DINE achieves highly competitive performance compared to state-of-the-art data-dependent approaches.
+</dd><br>
 </i></div></details>
 
 <b>Jian Liang</b>, Dapeng Hu, Jiashi Feng, Ran He.<br>
@@ -412,7 +426,9 @@ Abstract:
 <span id="papertitle">Mimicking the Oracle: An Initial Phase Decorrelation Approach for Class Incremental Learning.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Class Incremental Learning (CIL) aims at learning a multi-class classifier in a phase-by-phase manner, in which only data of a subset of the classes are provided at each phase. Previous works mainly focus on mitigating forgetting in phases after the initial one. However, we find that improving CIL at its initial phase is also a promising direction. Specifically, we experimentally show that directly encouraging CIL Learner at the initial phase to output similar representations as the model jointly trained on all classes can greatly boost the CIL performance. Motivated by this, we study the difference between a naïvely-trained initial-phase model and the oracle model. Specifically, since one major difference between these two models is the number of training classes, we investigate how such difference affects the model representations. We find that, with fewer training classes, the data representations of each class lie in a long and narrow region; with more training classes, the representations of each class scatter more uniformly. Inspired by this observation, we propose Class-wise Decorrelation (CwD) that effectively regularizes representations of each class to scatter more uniformly, thus mimicking the model jointly trained with all classes (i.e., the oracle model). Our CwD is simple to implement and easy to plug into existing methods. Extensive experiments on various benchmark datasets show that CwD consistently and significantly improves the performance of existing state-of-the-art methods by around 1\% to 3\%. Code will be released.
+</dd><br>
 </i></div></details>
 
 Yujun Shi, Kuangqi Zhou, <b>Jian Liang</b>, Zihang Jiang, Jiashi Feng, Philip Torr, Song Bai, Vincent Y. F. Tan.<br>
@@ -426,7 +442,9 @@ Yujun Shi, Kuangqi Zhou, <b>Jian Liang</b>, Zihang Jiang, Jiashi Feng, Philip To
 <span id="papertitle">META: Mimicking Embedding via oThers' Aggregation for Generalizable Person Re-identification.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Domain generalizable (DG) person re-identification (ReID) aims to test across unseen domains without access to the target domain data at training time, which is a realistic but challenging problem. In contrast to methods assuming an identical model for different domains, Mixture of Experts (MoE) exploits multiple domain-specific networks for leveraging complementary information between domains, obtaining impressive results. However, prior MoE-based DG ReID methods suffer from a large model size with the increase of the number of source domains, and most of them overlook the exploitation of domain-invariant characteristics. To handle the two issues above, this paper presents a new approach called Mimic Embedding via adapTive Aggregation (META) for DG person ReID. To avoid the large model size, experts in META do not adopt a branch network for each source domain but share all the parameters except for the batch normalization layers. Besides multiple experts, META leverages Instance Normalization (IN) and introduces it into a global branch to pursue invariant features across domains. Meanwhile, META considers the relevance of an unseen target sample and source domains via normalization statistics and develops an aggregation module to adaptively integrate multiple experts for mimicking unseen target domain. Benefiting from a proposed consistency loss and an episodic training algorithm, META is expected to mimic embedding for a truly unseen target domain. Extensive experiments verify that META surpasses state-of-the-art DG person ReID methods by a large margin.
+</dd><br> 
 </i></div></details>
 
 Boqiang Xu, <b>Jian Liang</b>, Lingxiao He, Zhenan Sun.<br>
@@ -441,7 +459,9 @@ Boqiang Xu, <b>Jian Liang</b>, Lingxiao He, Zhenan Sun.<br>
 <span id="papertitle">Diagnostic Classification for Human Autism and Obsessive-Compulsive Disorder Based on Machine Learning From a Primate Genetic Model.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Psychiatric disorders commonly comprise comorbid symptoms, such as autism spectrum disorder (ASD), obsessive-compulsive disorder (OCD), and attention deficit hyperactivity disorder (ADHD), raising controversies over accurate diagnosis and overlap of their neural underpinnings. The authors used noninvasive neuroimaging in humans and nonhuman primates to identify neural markers associated with DSM-5 diagnoses and quantitative measures of symptom severity.
+</dd><br>
 </i></div></details>
 
 Yafeng Zhan&#x1F947, Jianze Wei&#x1F947, <b>Jian Liang</b>, Xiu Xu, Ran He, Trevor W Robbins, Zheng Wang.<br>
@@ -454,7 +474,9 @@ Yafeng Zhan&#x1F947, Jianze Wei&#x1F947, <b>Jian Liang</b>, Xiu Xu, Ran He, Trev
 <span id="papertitle">Adversarial Domain Adaptation with Prototype-Based Normalized Output Conditioner.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: In this work, we attempt to address unsupervised domain adaptation by devising simple and compact conditional domain adversarial training methods. We first revisit the simple concatenation conditioning strategy where features are concatenated with output predictions as the input of the discriminator. We find the concatenation strategy suffers from the weak conditioning strength. We further demonstrate that enlarging the norm of concatenated predictions can effectively energize the conditional domain alignment. Thus we improve concatenation conditioning by normalizing the output predictions to have the same norm of features, and term the derived method as Normalized OutpUt coNditioner~(NOUN). However, conditioning on raw output predictions for domain alignment, NOUN suffers from inaccurate predictions of the target domain. To this end, we propose to condition the cross-domain feature alignment in the prototype space rather than in the output space. Combining the novel prototype-based conditioning with NOUN, we term the enhanced method as PROtotype-based Normalized OutpUt coNditioner~(PRONOUN). Experiments on both object recognition and semantic segmentation show that NOUN can effectively align the multi-modal structures across domains and even outperform state-of-the-art domain adversarial training methods. Together with prototype-based conditioning, PRONOUN further improves the adaptation performance over NOUN on multiple object recognition benchmarks for UDA.
+</dd><br>
 </i></div></details>
 
 Dapeng Hu, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Qibin Hou, Hanshu Yan, Yunpeng Chen.<br>
@@ -468,7 +490,9 @@ Dapeng Hu, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Qibin Hou, Hanshu Yan, Yunpeng 
 <span id="papertitle">Deep Semantic Reconstruction Hashing for Similarity Retrieval.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Hashing has shown enormous potentials in preserving semantic similarity for large-scale data retrieval. Existing methods widely retain the similarity within two binary codes towards their discrete semantic affinity, i.e., 1 or -1. However, such a discrete reconstruction approach has obvious drawbacks. First, two unrelated dissimilar samples would have similar binary codes when both of them are the most dissimilar with an anchor sample. Second, the fine-grained semantic similarity cannot be shown in the generated binary codes among data with multiple semantic concepts. Furthermore, existing approaches generally adopt a point-wise error-minimizing strategy to enforce the real-valued codes close to its associated discrete codes, resulting in the well-learned paired semantic similarity being unintentionally damaged when performing quantization. To address these issues, we propose a novel deep hashing method with pairwise similarity-preserving quantization constraint, termed Deep Semantic Reconstruction Hashing (DSRH), which defines a high-level semantic affinity within each data pair to learn compact binary codes. Specifically, DSRH is expected to learn the specific binary codes whose similarity can reconstruct their high-level semantic similarity. Besides, we adopt a pairwise similarity-preserving quantization constraint instead of the traditional point-wise quantization technique, which is conducive to maintain the well-learned paired semantic similarity when performing quantization. Extensive experiments are conducted on four representative image retrieval benchmarks, and the proposed DSRH outperforms the state-of-the-art deep-learning methods with respect to different evaluation metrics.
+</dd><br>
 </i></div></details>
 
 Yunbo Wang, Xianfeng Ou, <b>Jian Liang</b>, Zhenan Sun.<br>
@@ -481,7 +505,9 @@ Yunbo Wang, Xianfeng Ou, <b>Jian Liang</b>, Zhenan Sun.<br>
 <span id="papertitle">Domain Adaptation with Auxiliary Target Domain-Oriented Classifier.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Domain adaptation (DA) aims to transfer knowledge from a label-rich but heterogeneous domain to a label-scare domain, which alleviates the labeling efforts and attracts considerable attention. Different from previous methods focusing on learning domain-invariant feature representations, some recent methods present generic semi-supervised learning (SSL) techniques and directly apply them to DA tasks, even achieving competitive performance. One of the most popular SSL techniques is pseudo-labeling that assigns pseudo labels for each unlabeled data via the classifier trained by labeled data. However, it ignores the distribution shift in DA problems and is inevitably biased to source data. To address this issue, we propose a new pseudo-labeling framework called Auxiliary Target Domain-Oriented Classifier (ATDOC). ATDOC alleviates the classifier bias by introducing an auxiliary classifier for target data only, to improve the quality of pseudo labels. Specifically, we employ the memory mechanism and develop two types of non-parametric classifiers, i.e. the nearest centroid classifier and neighborhood aggregation, without introducing any additional network parameters. Despite its simplicity in a pseudo classification objective, ATDOC with neighborhood aggregation significantly outperforms domain alignment techniques and prior SSL techniques on a large variety of DA benchmarks and even scare-labeled SSL tasks.
+</dd><br> 
 </i></div></details>
 
 <b>Jian Liang</b>, Dapeng Hu, Jiashi Feng.<br>
@@ -496,7 +522,9 @@ Abstract:
 <span id="papertitle">No Fear of Heterogeneity: Classifier Calibration for Federated Learning with Non-IID Data.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: A central challenge in training classification models in the real-world federated system is learning with non-IID data. To cope with this, most of the existing works involve enforcing regularization in local optimization or improving the model aggregation scheme at the server. Other works also share public datasets or synthesized samples to supplement the training of under-represented classes or introduce a certain level of personalization. Though effective, they lack a deep understanding of how the data heterogeneity affects each layer of a deep classification model. In this paper, we bridge this gap by performing an experimental analysis of the representations learned by different layers. Our observations are surprising: (1) there exists a greater bias in the classifier than other layers, and (2) the classification performance can be significantly improved by post-calibrating the classifier after federated training. Motivated by the above findings, we propose a novel and simple algorithm called Classifier Calibration with Virtual Representations (CCVR), which adjusts the classifier using virtual representations sampled from an approximated gaussian mixture model. Experimental results demonstrate that CCVR achieves state-of-the-art performance on popular federated learning benchmarks including CIFAR-10, CIFAR-100, and CINIC-10. We hope that our simple yet effective method can shed some light on the future research of federated learning with non-IID data.
+</dd><br>
 </i></div></details>
 
 Mi Luo, Fei Chen, Dapeng Hu, Yifan Zhang, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Jiashi Feng<sup>&#x1F6A9</sup>.<br>
@@ -509,7 +537,9 @@ Mi Luo, Fei Chen, Dapeng Hu, Yifan Zhang, <b>Jian Liang<sup>&#x1F6A9</sup></b>, 
 <span id="papertitle">Unleashing the Power of Contrastive Self-Supervised Visual Models via Contrast-Regularized Fine-Tuning.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Contrastive self-supervised learning (CSL) has attracted increasing attention for model pre-training via unlabeled data. The resulted CSL models provide instance-discriminative visual features that are uniformly scattered in the feature space.  During deployment, the common practice is to directly fine-tune CSL models with cross-entropy, which however may not be the best strategy in practice. Although cross-entropy tends to separate inter-class features, the resulting models still have limited capability for reducing intra-class feature scattering that exists in CSL models. In this paper, we investigate whether applying contrastive learning to fine-tuning would bring further benefits, and analytically find that optimizing the contrastive loss benefits both discriminative representation learning and model optimization during fine-tuning. Inspired by these findings, we propose Contrast-regularized tuning (Core-tuning), a new approach for fine-tuning CSL models. Instead of simply adding the contrastive loss to the objective of fine-tuning, Core-tuning further applies a novel hard pair mining strategy for more effective contrastive fine-tuning, as well as smoothing the decision boundary to better exploit the learned discriminative feature space. Extensive experiments on image classification and semantic segmentation verify the effectiveness of Core-tuning.
+</dd><br>
 </i></div></details>
 
 Yifan Zhang, Bryan Hooi, Dapeng Hu, <b>Jian Liang</b>, Jiashi Feng.<br>
@@ -525,7 +555,9 @@ Yifan Zhang, Bryan Hooi, Dapeng Hu, <b>Jian Liang</b>, Jiashi Feng.<br>
 <span id="papertitle">Do We Really Need to Access the Source Data? Source Hypothesis Transfer for Unsupervised Domain Adaptation.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Unsupervised domain adaptation (UDA) aims to leverage the knowledge learned from a labeled source dataset to solve similar tasks in a new unlabeled domain. Prior UDA methods typically require to access the source data when learning to adapt the model, making them risky and inefficient for decentralized private data. This work tackles a practical setting where only a trained source model is available and investigates how we can effectively utilize such a model without source data to solve UDA problems. We propose a simple yet generic representation learning framework, named \emph{Source HypOthesis Transfer} (SHOT). SHOT freezes the classifier module (hypothesis) of the source model and learns the target-specific feature extraction module by exploiting both information maximization and self-supervised pseudo-labeling to implicitly align representations from the target domains to the source hypothesis. To verify its versatility, we evaluate SHOT in a variety of adaptation cases including closed-set, partial-set, and open-set domain adaptation. Experiments indicate that SHOT yields state-of-the-art results among multiple domain adaptation benchmarks.
+</dd><br>
 </i></div></details>
 
 <b>Jian Liang</b>, Dapeng Hu, Jiashi Feng.<br>
@@ -540,7 +572,9 @@ Abstract:
 <span id="papertitle">A Balanced and Uncertainty-aware Approach for Partial Domain Adaptation.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: This work addresses the unsupervised domain adaptation problem, especially in the case of class labels in the target domain being only a subset of those in the source domain. Such a partial transfer setting is realistic but challenging and existing methods always suffer from two key problems, negative transfer and uncertainty propagation. In this paper, we build on domain adversarial learning and propose a novel domain adaptation method BA3US with two new techniques termed Balanced Adversarial Alignment (BAA) and Adaptive Uncertainty Suppression (AUS), respectively. On one hand, negative transfer results in misclassification of target samples to the classes only present in the source domain. To address this issue, BAA pursues the balance between label distributions across domains in a fairly simple manner. Specifically, it randomly leverages a few source samples to augment the smaller target domain during domain alignment so that classes in different domains are symmetric. On the other hand, a source sample would be denoted as uncertain if there is an incorrect class that has a relatively high prediction score, and such uncertainty easily propagates to unlabeled target data around it during alignment, which severely deteriorates adaptation performance. Thus we present AUS that emphasizes uncertain samples and exploits an adaptive weighted complement entropy objective to encourage incorrect classes to have uniform and low prediction scores. Experimental results on multiple benchmarks demonstrate our BA3US surpasses state-of-the-arts for partial domain adaptation tasks.
+</dd><br>
 </i></div></details>
 
 <b>Jian Liang</b>, Yunbo Wang, Dapeng Hu, Ran He, Jiashi Feng.<br>
@@ -555,7 +589,9 @@ Abstract:
 <span id="papertitle">Aggregating Randomized Clustering-Promoting Invariant Projections for Domain Adaptation.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Unsupervised domain adaptation aims to leverage the labeled source data to learn with the unlabeled target data. Previous trandusctive methods tackle it by iteratively seeking a low-dimensional projection to extract the invariant features and obtaining the pseudo target labels via building a classifier on source data. However, they merely concentrate on minimizing the cross-domain distribution divergence, while ignoring the intra-domain structure especially for the target domain. Even after projection, possible risk factors like imbalanced data distribution may still hinder the performance of target label inference. In this paper, we propose a simple yet effective domain-invariant projection ensemble approach to tackle these two issues together. Specifically, we seek the optimal projection via a novel relaxed domain-irrelevant clustering-promoting term that jointly bridges the cross-domain semantic gap and increases the intra-class compactness in both domains. To further enhance the target label inference, we first develop a `sampling-and-fusion' framework, under which multiple projections are independently learned based on various randomized coupled domain subsets. Subsequently, aggregating models such as majority voting are utilized to leverage multiple projections and classify unlabeled target data. Extensive experimental results on six visual benchmarks including object, face, and digit images, demonstrate that the proposed methods gain remarkable margins over state-of-the-art unsupervised domain adaptation methods.
+</dd><br> 
 </i></div></details>
 
 <span id="2019"></span>
@@ -572,7 +608,9 @@ Abstract:
 <span id="papertitle">Local Semantic-aware Deep Hashing with Hamming-isometric Quantization.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Hashing is a promising approach for compact storage and efficient retrieval of big data. Compared to the conventional hashing methods using handcrafted features, emerging deep hashing approaches employ deep neural networks to learn both feature representations and hash functions, which have been proven to be more powerful and robust in real-world applications. Currently, most of the existing deep hashing methods construct pairwise or triplet-wise constraints to obtain similar binary codes between a pair of similar data points or relatively similar binary codes within a triplet. However, we argue that some critical local structures have not been fully exploited. So, this paper proposes a novel deep hashing method named local semantic-aware deep hashing with Hamming-isometric quantization (LSDH), aiming to make full use of local similarity in hash function learning. Specifically, the potential semantic relation is exploited to robustly preserve local similarity of data in the Hamming space. In addition to reducing the error introduced by binary quantizing, a Hamming-isometric objective is designed to maximize the consistency of similarity between the pairwise binary-like features and corresponding binary codes pair, which is shown to be able to improve the quality of binary codes. Extensive experimental results on several benchmark datasets, including three single-label datasets and one multi-label dataset, demonstrate that the proposed LSDH achieves better performance than the latest state-of-the-art hashing methods.
+</dd><br> 
 </i></div></details>
 
 Yunbo Wang, <b>Jian Liang</b>, Dong Cao, Zhenan Sun.<br>
@@ -585,7 +623,9 @@ Yunbo Wang, <b>Jian Liang</b>, Dong Cao, Zhenan Sun.<br>
 <span id="papertitle">Exploring Uncertainty in Pseudo-label Guided Unsupervised Domain Adaptation.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Due to the unavailability of labeled target data, most existing unsupervised domain adaptation (UDA) methods alternately classify the unlabeled target samples and discover a low-dimensional subspace by mitigating the cross-domain distribution discrepancy. During the pseudo-label guided subspace discovery step, however, the posterior probabilities (uncertainties) from the previous target label estimation step are totally ignored, which may promote the error accumulation and degrade the adaptation performance. To address this issue, we propose to progressively increase the number of target training samples and incorporate the uncertainties to accurately characterize both cross-domain distribution discrepancy and other intra-domain relations. Specifically, we exploit maximum mean discrepancy (MMD) and within-class variance minimization for these relations, yet, these terms merely focus on the global class structure while ignoring the local structure. Then, a triplet-wise instance-to-center margin is further maximized to push apart target instances and source class centers of different classes and bring closer them of the same class. Generally, an EM-style algorithm is developed by alternating between inferring uncertainties, progressively selecting certain training target samples, and seeking the optimal feature transformation to bridge two domains. Extensive experiments on three popular visual domain adaptation datasets demonstrate that our method significantly outperforms recent state-of-the-art approaches.
+</dd><br>
 </i></div></details>
 
 <b>Jian Liang</b>, Ran He, Zhenan Sun, Tieniu Tan.<br>
@@ -599,7 +639,9 @@ Abstract:
 <span id="papertitle">Distant Supervised Centroid Shift: A Simple and Efficient Approach to Visual Domain Adaptation.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Conventional domain adaptation methods usually resort to deep neural networks or subspace learning to find invariant representations across domains. However, most deep learning methods highly rely on large-size source domains and are computationally expensive to train, while subspace learning methods always have a quadratic time complexity that suffers from the large domain size. This paper provides a simple and efficient solution, which could be regarded as a well-performing baseline for domain adaptation tasks. Our method is built upon the nearest centroid classifier, seeking a subspace where the centroids in the target domain are moderately shifted from those in the source domain. Specifically, we design a unified objective without accessing the source domain data and adopt an alternating minimization scheme to iteratively discover the pseudo target labels, invariant subspace, and target centroids. Besides its privacy-preserving property (distant supervision), the algorithm is provably convergent and has a promising linear time complexity. In addition, the proposed method can be readily extended to multi-source setting and domain generalization, and it remarkably enhances popular deep adaptation methods by borrowing the learned transferable features. Extensive experiments on several benchmarks including object, digit, and face recognition datasets validate that our methods yield state-of-the-art results in various domain adaptation tasks.
+</dd><br>
 </i></div></details>
 
 <b>Jian Liang</b>, Ran He, Zhenan Sun, Tieniu Tan.<br>
@@ -614,7 +656,9 @@ Abstract:
 <span id="papertitle">Deep Spatial Feature Reconstruction for Partial Person Re-Identification: Alignment-Free Approach.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Partial person re-identification (re-id) is a challenging problem, where only a partial observation of a person image is available for matching. However, few studies have offered a solution of how to identify an arbitrary patch of a person image. In this paper, we propose a fast and accurate matching method to address this problem. The proposed method leverages Fully Convolutional Network (FCN) to generate correspondingly-size spatial feature maps such that pixel-level features are consistent. To match a pair of person images of different sizes, a novel method called Deep Spatial feature Reconstruction (DSR) is further developed to avoid explicit alignment. Specifically, we exploit the reconstructing error from dictionary learning to calculate the similarity between different spatial feature maps. In that way, we expect that the proposed FCN can decrease the similarity of coupled images from different persons and vice versa. Experimental results on two partial person datasets demonstrate the efficiency and effectiveness of the proposed method in comparison with several state-of-the-art partial person re-id approaches.
+</dd><br>
 </i></div></details>
 
 Lingxiao He&#x1F947, <b>Jian Liang&#x1F947</b>, Haiqing Li, Zhenan Sun.<br>
@@ -628,7 +672,9 @@ Lingxiao He&#x1F947, <b>Jian Liang&#x1F947</b>, Haiqing Li, Zhenan Sun.<br>
 <span id="papertitle">X-GACMN: An X-Shaped Generative Adversarial Cross-Modal Network with Hypersphere Embedding.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: How to bridge heterogeneous gap between different modalities is one of the main challenges in cross-modal retrieval task. Most existing methods try to tackle this problem by projecting data from different modalities into a common space. In this paper, we introduce a novel X-Shaped Generative Adversarial Cross-Modal Network (X-GACMN) to learn a better common space between different modalities. Specifically, the proposed architecture combines the process of synthetic data generation and distribution adapting into a unified framework to make sure the heterogeneous modality distributions similar to each other in the learned common subspace. To promote the discriminative ability, a new loss function that combines intra-modality angular softmax loss and cross-modality pair-wise consistent loss is further imposed on the common space, hence the learned features can well preserve both inter-modality structure and intra-modality structure on a hypersphere manifold. Extensive experiments on three benchmark datasets show the effectiveness of the proposed approach.
+</dd><br>
 </i></div></details>
 
 Weikuo Guo, <b>Jian Liang</b>, Xiangwei Kong, Lingxiao Song, Ran He.<br>
@@ -641,7 +687,9 @@ Weikuo Guo, <b>Jian Liang</b>, Xiangwei Kong, Lingxiao Song, Ran He.<br>
 <span id="papertitle">Learning Discriminative Geodesic Flow Kernel for Unsupervised Domain Adaptation.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Extracting the domain-invariant features provides an important intuition for unsupervised domain adaptation. Due to the unavailable target labels, it is difficult to guarantee that the learned domain-invariant features are good for target instances classification. In this paper, we extend the classic geodesic flow kernel method by leveraging the pseudo labels during the training process to learn a discriminative geodesic flow kernel for unsupervised domain adaptation. Specifically, the proposed method alternately discovers the pseudo target labels and builds the geodesic flow from a discriminative source subspace to another ‘discriminative’ target subspace. More specially, the pseudo target labels are inferred via the learned kernel based on an easy yet effective label propagation strategy. Hence, the proposed method not only holds the property of domain-invariance, but also maximizes the consistency between pseudo label structure and data structure. Experimental results illustrate that the proposed method outperforms the state-of-the-art unsupervised domain adaptation methods for object recognition and sentiment analysis.
+</dd><br>
 </i></div></details>
 
 Jianze Wei&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Ran He, Jinfeng Yang.<br>
@@ -656,7 +704,9 @@ Jianze Wei&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Ran He, Jinfeng Yang.<br>
 <span id="papertitle">Nonlinear Discrete Cross-Modal Hashing for Visual-Textual Data.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Hashing techniques have been widely adopted for cross-modal retrieval due to their low storage cost and fast query speed. Recently, some unimodal hashing methods have tried to directly optimize the objective function with discrete binary constraints. Inspired by these methods, the authors propose a novel supervised cross-modal hashing method called Discrete Cross-Modal Hashing (DCMH) to learn the binary codes without relaxing them. DCMH is formulated through semantic similarity reconstruction, and it learns binary codes for use as ideal features for classification. Furthermore, DCMH alternately updates binary codes for each modality, and its discrete hashing codes are learned efficiently, bit by bit, which is quite promising for large-scale datasets. To evaluate the effectiveness of the proposed discrete optimization, the authors optimize their objective function in a relax-and-threshold manner. Extensive empirical results on both image-text and image-tag datasets demonstrate that DCMH is a significant improvement over previous approaches in terms of training time and retrieval performance.
+</dd><br>
 </i></div></details>
 
 Dekui Ma&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Ran He, Xiangwei Kong.<br>
@@ -670,7 +720,9 @@ Dekui Ma&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Ran He, Xiangwei Kong.<br>
 <span id="papertitle">Self-Paced Learning: an Implicit Regularization Perspective.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Self-paced learning (SPL) mimics the cognitive mechanism of humans and animals that gradually learns from easy to hard samples. One key issue in SPL is to obtain better weighting strategy that is determined by the minimizer function. Existing methods usually pursue this by artificially designing the explicit form of SPL regularizer. In this paper, we study a group of new regularizer (named self-paced implicit regularizer) that is deduced from robust loss function. Based on the convex conjugacy theory, the minimizer function for self-paced implicit regularizer can be directly learned from the latent loss function, while the analytic form of the regularizer can be even unknown. A general framework (named SPL-IR) for SPL is developed accordingly. We demonstrate that the learning procedure of SPL-IR is associated with latent robust loss functions, thus can provide some theoretical insights for its working mechanism. We further analyze the relation between SPL-IR and half-quadratic optimization and provide a group of self-paced implicit regularizer. Finally, we implement SPL-IR to both supervised and unsupervised tasks, and experimental results corroborate our ideas and demonstrate the correctness and effectiveness of implicit regularizers.
+</dd><br> 
 </i></div></details>
 
 Yanbo Fan, Ran He, <b>Jian Liang</b>, Bao-Gang Hu.<br>
@@ -684,7 +736,9 @@ Yanbo Fan, Ran He, <b>Jian Liang</b>, Bao-Gang Hu.<br>
 <span id="papertitle">Self-Paced Cross-Modal Subspace Matching.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Cross-modal matching methods match data from different modalities according to their similarities. Most existing methods utilize label information to reduce the semantic gap between different modalities. However, it is usually time-consuming to manually label large-scale data. This paper proposes a Self-Paced Cross-Modal Subspace Matching (SCSM) method for unsupervised multimodal data. We assume that multimodal data are pair-wised and from several semantic groups, which form hard pair-wised constraints and soft semantic group constraints respectively. Then, we formulate the unsupervised cross-modal matching problem as a non-convex joint feature learning and data grouping problem. Self-paced learning, which learns samples from 'easy' to 'complex', is further introduced to refine the grouping result. Moreover, a multimodal graph is constructed to preserve the relationship of both inter- and intra-modality similarity. An alternating minimization method is employed to minimize the non-convex optimization problem, followed by the discussion on its convergence analysis and computational complexity. Experimental results on four multimodal databases show that SCSM outperforms state-of-the-art cross-modal subspace learning methods.
+</dd><br>
 </i></div></details>
 
 Jian Liang&#x1F947, Zhihang Li&#x1F947, Dong Cao, Ran He, Jingdong Wang.<br>
@@ -700,7 +754,9 @@ Jian Liang&#x1F947, Zhihang Li&#x1F947, Dong Cao, Ran He, Jingdong Wang.<br>
 <span id="papertitle">Group-Invariant Cross-Modal Subspace Learning.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Cross-modal learning tries to find various types of heterogeneous data (e.g., image) from a given query (e.g., text). Most cross-modal algorithms heavily rely on semantic labels and benefit from a semantic-preserving aggregation of pairs of heterogeneous data. However, the semantic labels are not readily obtained in many real-world applications. This paper studies the aggregation of these pairs unsupervisedly. Apart from lower pairwise correspondences that force the data from one pair to be close to each other, we propose a novel concept, referred as groupwise correspondences, supposing that each paired heterogeneous data are from an identical latent group. We incorporate this groupwise correspondences into canonical correlation analysis (CCA) model, and seek a latent common subspace where data are naturally clustered into several latent groups. To simplify this nonconvex and nonsmooth problem, we introduce a non-negative orthogonal variable to represent the soft group membership, then two coupled computationally efficient subproblems (a generalized ratio-trace problem and a non-negative problem) are alternatively minimized to guarantee the proposed algorithm converges locally. Experimental results on two benchmark datasets demonstrate that the proposed unsupervised algorithm even achieves comparable performance to some state-of-the-art supervised cross-modal algorithms.
+</dd><br>
 </i></div></details>
 
 <b>Jian Liang</b>, Ran He, Zhenan Sun, Tieniu Tan.<br>
@@ -715,7 +771,9 @@ Abstract:
 <span id="papertitle">Frustratingly Easy Cross-Modal Hashing.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Cross-modal hashing has attracted considerable attention due to its low storage cost and fast retrieval speed. Recently, more and more sophisticated researches related to this topic are proposed. However, they seem to be inefficient computationally for several reasons. On one hand, learning coupled hash projections makes the iterative optimization problem challenging. On the other hand, individual collective binary codes for each content are also learned with a high computation complexity. In this paper we describe a simple yet effective cross-modal hashing approach that can be implemented in just three lines of code. This approach first obtains the binary codes for one modality via unimodal hashing methods (e.g., iterative quantization (ITQ)), then applies simple linear regression to project the other modalities into the obtained binary subspace. Obviously, it is non-iterative and parameter-free, which makes it more attractive for many real-world applications. We further compare our approach with other state-of-the-art methods on four benchmark datasets (i.e., the Wiki, VOC, LabelMe and NUS-WIDE datasets). Despite its extraordinary simplicity, our approach performs remarkably and generally well for these datasets under different experimental settings (i.e., large-scale, high-dimensional and multi-label datasets).
+</dd><br>
 </i></div></details>
 
 Dekui Ma&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Xiangwei Kong, Ran He, Ying Li.<br>
@@ -730,7 +788,9 @@ Dekui Ma&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Xiangwei Kong, Ran He, Ying
 <span id="papertitle">Discrete Cross-Modal Hashing for Efficient Multimedia Retrieval.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Hashing techniques have been widely adopted for cross-modal retrieval due to its low storage cost and fast query speed. Most existing cross-modal hashing methods aim to map heterogeneous data into the common low-dimensional hamming space and then threshold to obtain binary codes by relaxing the discrete constraint. However, this independent relaxation step also brings quantization errors, resulting in poor retrieval performances. Other cross-modal hashing methods try to directly optimize the challenging objective function with discrete binary constraints. Inspired by [1], we propose a novel supervised cross-modal hashing method called Discrete Cross-Modal Hashing (DCMH) to learn the discrete binary codes without relaxing them. DCMH is formulated through reconstructing the semantic similarity matrix and learning binary codes as ideal features for classification. Furthermore, DCMH alternately updates binary codes of each modality, and iteratively learns the discrete hashing codes bit by bit efficiently, which is quite promising for large-scale datasets. Extensive empirical results on three real-world datasets show that DCMH outperforms the baseline approaches significantly.
+</dd><br> 
 </i></div></details>
 
 Dekui Ma&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Xiangwei Kong, Ran He.<br>
@@ -744,7 +804,9 @@ Dekui Ma&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Xiangwei Kong, Ran He.<br>
 <span id="papertitle">Code Consistent Hashing Based on Information-Theoretic Criterion.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Learning based hashing techniques have attracted broad research interests in the Big Media research area. They aim to learn compact binary codes which can preserve semantic similarity in the Hamming embedding. However, the discrete constraints imposed on binary codes typically make hashing optimizations very challenging. In this paper, we present a code consistent hashing (CCH) algorithm to learn discrete binary hash codes. To form a simple yet efficient hashing objective function, we introduce a new code consistency constraint to leverage discriminative information and propose to utilize the Hadamard code which favors an information-theoretic criterion as the class prototype. By keeping the discrete constraint and introducing an orthogonal constraint, our objective function can be minimized efficiently. Experimental results on three benchmark datasets demonstrate that the proposed CCH outperforms state-of-the-art hashing methods in both image retrieval and classification tasks, especially with short binary codes.
+</dd><br>
 </i></div></details>
 
 Shu Zhang&#x1F947, <b>Jian Liang&#x1F947</b>, Ran He, Zhenan Sun.<br>
@@ -757,7 +819,9 @@ Shu Zhang&#x1F947, <b>Jian Liang&#x1F947</b>, Ran He, Zhenan Sun.<br>
 <span id="papertitle">Two-Step Greedy Subspace Clustering.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Greedy subspace clustering methods provide an efficient way to cluster large-scale multimedia datasets. However, these methods do not guarantee a global optimum and their clustering performance mainly depends on their initializations. To alleviate this initialization problem, this paper proposes a two-step greedy strategy by exploring proper neighbors that span an initial subspace. Firstly, for each data point, we seek a sparse representation with respect to its nearest neighbors. The data points corresponding to nonzero entries in the learning representation form an initial subspace, which potentially rejects bad or redundant data points. Secondly, the subspace is updated by adding an orthogonal basis involved with the newly added data points. Experimental results on real-world applications demonstrate that our method can significantly improve the clustering accuracy of greedy subspace clustering methods without scarifying much computational time.
+</dd><br>
 </i></div></details>
 
 Lingxiao Song, Man Zhang, Zhenan Sun, <b>Jian Liang</b>, Ran He.<br>
@@ -770,7 +834,9 @@ Lingxiao Song, Man Zhang, Zhenan Sun, <b>Jian Liang</b>, Ran He.<br>
 <span id="papertitle">Principal Affinity Based Cross-Modal Retrieval.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+<dd><br>
+Abstract: Multimedia content is increasingly available in multiple modalities. Each modality provides a different representation of the same entity. This paper studies the problem of joint representation of the text and image components of multimedia documents. However, most existing algorithms focus more on inter-modal connection rather than intramodal feature extraction. In this paper, a simple yet effective principal affinity representation (PAR) approach is proposed to exploit the affinity representations of different modalities with local cluster samples. Afterwards, multi-class logistic regression model is adopted to learn the projections from principal affinity representation to semantic labels vectors. Inner product distance is further used to improve cross-modal retrieval performance. Extensive experiments on three benchmark datasets illustrate that our proposed method obtains significant improvements over the state-of-the-art subspace learning based cross-modal methods.
+</dd><br>
 </i></div></details>
 
 <b>Jian Liang</b>, Dong Cao, Ran He, Zhenan Sun, Tieniu Tan.<br>
