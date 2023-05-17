@@ -170,18 +170,6 @@ Lijun Sheng, <b>Jian Liang</b>, Yuhe Ding, Ran He, Zilei Wang, Tieniu Tan.<br>
 <br>
 -->
 
-<!-- 
-<details><summary>
-<span id="papertitle">Rumor Detection with Diverse Counterfactual Evidence.
-</span></a><br></summary>
-<div id="abstract"><i>
-Abstract: 
-</i></div></details>
-Kaiwei Zhang, Junchi Yu, Haichao Shi, <b>Jian Liang</b>, Xiao-Yu Zhang.<br>
-<i>submitted to Proc. KDD, under review, 2023.</i><br>
-<br> 
--->
-
 <details><summary>
 <span id="papertitle">AUTO: Adaptive Outlier Optimization for Online Test-time OOD Detection.
 </span></a><br></summary>
@@ -195,7 +183,6 @@ Puning Yang, <b>Jian Liang</b>, Jie Cao, Ran He.<br>
 [<a href="https://arxiv.org/abs/2303.12267"><span id="paperlink">Link</span></a>]
 <br><br>
 
-
 <details><summary>
 <span id="papertitle">AdaptGuard: Defending Against Universal Attacks for Model Adaptation.
 </span></a><br></summary>
@@ -207,32 +194,6 @@ Lijun Sheng, <b>Jian Liang</b>, Ran He, Zilei Wang, Tieniu Tan.<br>
 <i>Arxiv technical report, 2023.</i><br>
 [<a href="https://arxiv.org/pdf/2303.10594.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://arxiv.org/abs/2303.10594"><span id="paperlink">Link</span></a>]
-<br><br>
-
-<details><summary>
-<span id="papertitle">Domain-Specific Risk Minimization for Out-of-Distribution Generalization.
-</span></a><br></summary>
-<div id="abstract"><i>
-Abstract: 
-</i></div></details>
-
-Yi-Fan Zhang, Jindong Wang, <b>Jian Liang</b>, Zhang Zhang, Baosheng Yu, Liang Wang, Xing Xie, Dacheng Tao.<br>
-<i>Arxiv technical report, 2022.</i><br>
-[<a href="https://arxiv.org/pdf/2208.08661.pdf"><span id="paper">Paper</span></a>]
-[<a href="https://arxiv.org/abs/2208.08661"><span id="paperlink">Link</span></a>]
-<br><br>
-
-<details><summary>
-<span id="papertitle">Finding Diverse and Predictable Subgraphs for Graph Domain Generalization.
-</span></a><br></summary>
-<div id="abstract"><i>
-Abstract: 
-</i></div></details>
-
-Junchi Yu, <b>Jian Liang</b>, Ran He.<br>
-<i>Arxiv technical report, 2022.</i><br>
-[<a href="https://arxiv.org/pdf/2206.09345.pdf"><span id="paper">Paper</span></a>]
-[<a href="https://arxiv.org/abs/2206.09345"><span id="paperlink">Link</span></a>]
 <br><br>
 
 <details><summary>
@@ -321,7 +282,6 @@ Ziming Yang, <b>Jian Liang</b>, Yuting Xu, Xiao-Yu Zhang, Ran He.<br>
 [<a href="https://github.com/zimyang/MaskRelation"><span id="papercode">Code</span></a>]
 <br><br>
 
-
 <details><summary>
 <span id="papertitle">Reciprocal Normalization for Domain Adaptation.
 </span></a><br></summary>
@@ -347,6 +307,34 @@ Abstract:
 
 Boqiang Xu, <b>Jian Liang</b>, Lingxiao He, Jinlin Wu, Chao Fan, Zhenan Sun.<br>
 <i>ACM Transactions on Multimedia Computing, Communications, and Application (TOMM), 2023.</i><br>
+[<a href="xx.pdf"><span id="paper">Paper</span></a>]
+[<a href="https://arxiv.org/abs/xx"><span id="paperlink">Link</span></a>]
+<br><br>
+
+<details><summary>
+<span id="papertitle">Domain-Specific Risk Minimization for Domain Generalization.
+</span></a><br></summary>
+<div id="abstract"><i>
+<dd><br>
+Abstract: Learning a domain-invariant representation has become one of the most popular approaches for domain adaptation/generalization. In this paper, we show that the invariant representation may not be sufficient to guarantee a good generalization, where the labeling function shift should be taken into consideration. Inspired by this, we first derive a new generalization upper bound on the empirical risk that explicitly considers the labeling function shift. We then propose Domain-specific Risk Minimization (DRM), which can model the distribution shifts of different domains separately and select the most appropriate one for the target domain. Extensive experiments on four popular domain generalization datasets, CMNIST, PACS, VLCS, and DomainNet, demonstrate the effectiveness of the proposed \abbr for domain generalization with the following advantages: 1) it significantly outperforms competitive baselines; 2) it enables either comparable or superior accuracies on all training domains comparing to vanilla empirical risk minimization (ERM); 3) it remains very simple and efficient during training, and 4) it is complementary to invariant learning approaches.
+</i></div></details>
+
+Yi-Fan Zhang, Jindong Wang, <b>Jian Liang</b>, Zhang Zhang, Baosheng Yu, Liang Wang, Xing Xie, Dacheng Tao.<br>
+<i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023.</i><br>
+[<a href="https://arxiv.org/pdf/2208.08661.pdf"><span id="paper">Paper</span></a>]
+[<a href="https://arxiv.org/abs/2208.08661"><span id="paperlink">Link</span></a>]
+<br><br>
+
+<details><summary>
+<span id="papertitle">Rumor Detection with Diverse Counterfactual Evidence.
+</span></a><br></summary>
+<div id="abstract"><i>
+<dd><br>
+Abstract: Due to the growth in use of social media, fake news can cause serious problems in society, which are harmful to individuals or communities. Therefore, the researches on timely and effective detection of rumors have aroused lots of interest in both academia and industry, leading to the widespread research on rumor detection. Most existing methods have attempted to integrate graph neural networks (GNNs) with rumor detection to explore the post propagation patterns. However, these methods have overlooked the explanations for GNNs and are not counterfactual in nature, which influences the generalization and detection ability of models. In this paper, we propose a Diverse Counterfactual Evidence framework for rumor detection, named as DiCE, for interpretable evidence generation. Specifically, a subgraph generation strategy based on Top-K Nodes Sampling is proposed to provide interpretability for each event graph. Generally, the counterfactual evidence refers to the prediction changes when a perturbation is added to the event graph. We then present the counterfactual evidence by removing the set of nodes identified by an explanation from the event graph. Finally, a diversity loss with Determinantal Point Processes (DPP)-inspired loss is proposed to ensure the diversity of multiple pieces of evidence. Extensive experiments on two public datasets show the superior performance of our method. Our code is available at https://anonymous.4open.science/r/DiCE-2B40. 
+</i></div></details>
+
+Kaiwei Zhang, Junchi Yu, Haichao Shi, <b>Jian Liang</b>, Xiao-Yu Zhang.<br>
+<i>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023.</i><br>
 [<a href="xx.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://arxiv.org/abs/xx"><span id="paperlink">Link</span></a>]
 <br><br>
