@@ -40,7 +40,7 @@ MathJax.Hub.Config({
 <div class="menu-item"><a href="miscellaneous.html">Miscellaneous</a></div>
 </td>
 <td id="layout-content">
-<h1>Preprints (&#x1F6A9: corresponding authors; &#x1F947: co-first authors)</h1>
+<h1>Preprints (<sup>&#129333</sup>: corresponding authors; <sup>&#x1F947</sup>: co-first authors)</h1>
 
 <!-- [<a href="https://arxiv.org/pdf/.pdf"><span id="paper">Paper</span></a>] -->
 <!-- [<a href="https://github.com/XX"><span id="papercode">Code</span></a>] -->
@@ -88,7 +88,7 @@ Yuxi Wang, <b>Jian Liang</b>, Zhaoxiang Zhang.<br>
 <div id="abstract"><i>
 Abstract: 
 </i></div></details>
-<!-- Yuhe Ding, Lijun Sheng, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Aihua Zheng, Ran He.<br> -->
+<!-- Yuhe Ding, Lijun Sheng, <b>Jian Liang<sup>&#129333</sup></b>, Aihua Zheng, Ran He.<br> -->
 Yuhe Ding, Lijun Sheng, <b>Jian Liang</b>, Aihua Zheng, Ran He.<br>
 <i>submitted to Neural Networks (NN), major revision, 2022.</i><br>
 [<a href="https://arxiv.org/pdf/2205.14566.pdf"><span id="paper">Paper</span></a>]
@@ -230,10 +230,10 @@ Abstract: Existing cross-domain keypoint detection methods always require access
 </dd><br>
 </i></div></details>
 
-Yuhe Ding, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Bo Jiang, Aihua Zheng, Ran He.<br>
+Yuhe Ding, <b>Jian Liang<sup>&#129333</sup></b>, Bo Jiang, Aihua Zheng, Ran He.<br>
 <i>IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2023.</i><br>
 [<a href="https://arxiv.org/pdf/2302.04589.pdf"><span id="paper">Paper</span></a>]
-[<a href="https://ieeexplore.ieee.org/abstract/document/xxx"><span id="paperlink">Link</span></a>]
+[<a href="https://ieeexplore.ieee.org/document/10182277"><span id="paperlink">Link</span></a>]
 [<a href="https://github.com/YuheD/MAPS"><span id="papercode">Code</span></a>]
 <br><br>
 
@@ -260,10 +260,10 @@ Zhiyong Huang, Kekai Sheng, Ke Li, <b>Jian Liang</b>, Taiping Yao, Weiming Dong,
 Abstract: 
 </i></div></details>
 
-Boqiang Xu, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Lingxiao He, Jinlin Wu, Chao Fan, Zhenan Sun.<br>
+Boqiang Xu, <b>Jian Liang<sup>&#129333</sup></b>, Lingxiao He, Jinlin Wu, Chao Fan, Zhenan Sun.<br>
 <i>ACM Transactions on Multimedia Computing, Communications, and Application (TOMM), 2023.</i><br>
-[<a href="xx.pdf"><span id="paper">Paper</span></a>]
-[<a href="https://arxiv.org/abs/xx"><span id="paperlink">Link</span></a>]
+[<a href="./assets/paper/tomm23.pdf"><span id="paper">Paper</span></a>]
+[<a href="https://dl.acm.org/doi/10.1145/3599730"><span id="paperlink">Link</span></a>]
 <br><br>
 
 <details><summary>
@@ -329,10 +329,18 @@ Junchi Yu, <b>Jian Liang</b>, Ran He.<br>
 </span></a><br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Model adaptation aims at solving the domain transfer problem under the constraint of only accessing the pretrained source models.
+With the increasing considerations of data privacy and transmission efficiency, this paradigm has been gaining recent popularity.
+This paper studies the vulnerability to universal attacks transferred from the source domain during model adaptation algorithms due to the existence of the malicious providers.
+We explore both universal adversarial perturbations and backdoor attacks as loopholes on the source side and discover that they still survive in the target models after adaptation.
+To address this issue, we propose a model preprocessing framework, named AdaptGuard, to improve the security of model adaptation algorithms. 
+AdaptGuard avoids direct use of the risky source parameters through knowledge distillation and utilizes the pseudo adversarial samples under adjusted radius to enhance the robustness.
+AdaptGuard is a plug-and-play module that requires neither robust pretrained models nor any changes for the following model adaptation algorithms.
+Extensive results on three commonly used datasets and two popular adaptation methods validate that AdaptGuard can effectively defend against universal attacks and maintain clean accuracy in the target domain simultaneously.
+We hope this research will shed light on the safety and robustness of transfer learning.
 </i></div></details>
 
-Lijun Sheng, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Ran He, Zilei Wang, Tieniu Tan.<br>
+Lijun Sheng, <b>Jian Liang<sup>&#129333</sup></b>, Ran He, Zilei Wang, Tieniu Tan.<br>
 <i>International Conference on Computer Vision (ICCV), 2023.</i><br>
 [<a href="https://arxiv.org/pdf/2303.10594.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://arxiv.org/abs/2303.10594"><span id="paperlink">Link</span></a>]
@@ -343,13 +351,21 @@ Lijun Sheng, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Ran He, Zilei Wang, Tieniu Ta
 </span></a><br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: With the growing interest in pretrained vision-language models like CLIP, recent research has focused on adapting these models to downstream tasks.
+Despite achieving promising results, most existing methods require labeled data for all classes, which may not hold in real-world applications due to the long tail and Zipf's law.
+For example, some classes may lack labeled data entirely, such as emerging concepts.
+To address this problem, we propose a plug-and-play generative approach called \textbf{S}ynt\textbf{H}es\textbf{I}zed \textbf{P}rompts~(\textbf{SHIP}) to improve existing fine-tuning methods.
+Specifically, we follow variational autoencoders to introduce a generator that reconstructs the visual features by inputting the synthesized prompts and the corresponding class names to the textual encoder of CLIP.
+In this manner, we easily obtain the synthesized features for the remaining label-only classes. 
+Thereafter, we fine-tune CLIP with off-the-shelf methods by combining labeled and synthesized features.
+Extensive experiments on base-to-new generalization, cross-dataset transfer learning, and generalized zero-shot learning demonstrate the superiority of our approach. 
 </i></div></details>
 
-Zhengbo Wang, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Ran He, Nan Xu, Zilei Wang, Tieniu Tan.<br>
+Zhengbo Wang, <b>Jian Liang<sup>&#129333</sup></b>, Ran He, Nan Xu, Zilei Wang, Tieniu Tan.<br>
 <i>International Conference on Computer Vision (ICCV), 2023.</i><br>
 [<a href="https://arxiv.org/pdf/2307.XXX.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://arxiv.org/abs/2307.XX"><span id="paperlink">Link</span></a>]
+[<a href="https://github.com/mrflogs/SHIP"><span id="papercode">Code</span></a>]
 <br><br>
 
 <details><summary>
@@ -370,13 +386,21 @@ Yuxi Wang, <b>Jian Liang</b>, Yuran Yang, Zhaoxiang Zhang.<br>
 <span id="papertitle">TALL: Thumbnail Layout for Deepfake Video Detection.
 </span></a><br></summary>
 <div id="abstract"><i>
-Abstract: 
+Abstract: The growing threats of deepfakes to society and cybersecurity have raised enormous public concerns, and increasing efforts have been devoted to this critical topic of deepfake video detection.
+Existing video methods achieve good performance but are computationally intensive.
+This paper introduces a simple yet effective strategy named Thumbnail Layout (TALL), which transforms a video clip into a pre-defined layout to realize the preservation of spatial and temporal dependencies.
+Specifically, consecutive frames are masked in a fixed position in each frame to improve generalization, then resized to sub-images and rearranged into a pre-defined layout as the thumbnail.
+TALL is model-agnostic and extremely simple by only modifying a few lines of code.
+Inspired by the success of vision transformers, we incorporate TALL into Swin Transformer, forming an efficient and effective method TALL-Swin.
+Extensive experiments on intra-dataset and cross-dataset validate the validity and superiority of TALL and SOTA TALL-Swin.
+TALL-Swin achieves 90.79$\%$ AUC on the challenging cross-dataset task, FaceForensics++ $\to$ Celeb-DF.
 </i></div></details>
 
-Yuting Xu, <b>Jian Liang</b>, Ziming Yang, Gengyun Jia, Yanhao Zhang, Ran He.<br>
+Yuting Xu, <b>Jian Liang<sup>&#129333</sup></b>, Ziming Yang, Gengyun Jia, Yanhao Zhang, Ran He.<br>
 <i>International Conference on Computer Vision (ICCV), 2023.</i><br>
 [<a href="https://arxiv.org/pdf/2307.XXX.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://arxiv.org/abs/2307.XX"><span id="paperlink">Link</span></a>]
+[<a href="https://github.com/rainy-xu/TALL4Deepfake"><span id="papercode">Code</span></a>]
 <br><br>
 
 <details><summary>
@@ -416,7 +440,7 @@ Abstract: Zero-shot learning (ZSL) aims to recognize unseen classes by generaliz
 </dd><br>
 </i></div></details>
 
-Zhengbo	Wang, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Zilei Wang, Tieniu Tan.<br>
+Zhengbo	Wang, <b>Jian Liang<sup>&#129333</sup></b>, Zilei Wang, Tieniu Tan.<br>
 <i>International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2023.</i><br>
 [<a href="https://arxiv.org/pdf/2303.09849.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://arxiv.org/abs/2303.09849"><span id="paperlink">Link</span></a>]
@@ -463,7 +487,7 @@ Abstract: Unsupervised domain adaptation (UDA) aims to transfer knowledge from a
 Abstract: One major issue that challenges person re-identification (Re-ID) is the ubiquitous occlusion over the captured persons. There are two main challenges for the occluded person Re-ID problem, i.e. , the interference of noise during feature matching and the loss of pedestrian information brought by the occlusions. In this paper, we propose a new approach called Feature Recovery Transformer (FRT) to address the two challenges simultaneously, which mainly consists of visibility graph matching and feature recovery transformer. To reduce the interference of the noise during feature matching, we mainly focus on visible regions that appear in both images and develop a visibility graph to calculate the similarity. In terms of the second challenge, based on the developed graph similarity, for each query image, we propose a recovery transformer that exploits the feature sets of its k -nearest neighbors in the gallery to recover the complete features. Extensive experiments across different person Re-ID datasets, including occluded, partial and holistic datasets, demonstrate the effectiveness of FRT. Specifically, FRT significantly outperforms state-of-the-art results by at least 6.2% Rank- 1 accuracy and 7.2% mAP scores on the challenging Occluded-Duke dataset.
 </dd><br>
 </i></div></details>
-Boqiang Xu, Lingxiao He, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Zhenan Sun.<br>
+Boqiang Xu, Lingxiao He, <b>Jian Liang<sup>&#129333</sup></b>, Zhenan Sun.<br>
 <i>IEEE Transactions on Image Processing (TIP), 2022.</i><br>
 [<a href="./assets/paper/tip22.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://ieeexplore.ieee.org/abstract/document/9814974/"><span id="paperlink">Link</span></a>]
@@ -560,7 +584,7 @@ Abstract: Psychiatric disorders commonly comprise comorbid symptoms, such as aut
 </dd><br>
 </i></div></details>
 
-Yafeng Zhan&#x1F947, Jianze Wei&#x1F947, <b>Jian Liang</b>, Xiu Xu, Ran He, Trevor W Robbins, Zheng Wang.<br>
+Yafeng Zhan<sup>&#x1F947</sup>, Jianze Wei<sup>&#x1F947</sup>, <b>Jian Liang</b>, Xiu Xu, Ran He, Trevor W Robbins, Zheng Wang.<br>
 <i>American Journal of Psychiatry (AJP), 2021</i><br>
 [<a href="./assets/paper/ajp21.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://ajp.psychiatryonline.org/doi/abs/10.1176/appi.ajp.2020.19101091"><span id="paperlink">Link</span></a>]
@@ -575,7 +599,7 @@ Abstract: In this work, we attempt to address unsupervised domain adaptation by 
 </dd><br>
 </i></div></details>
 
-Dapeng Hu, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Qibin Hou, Hanshu Yan, Yunpeng Chen.<br>
+Dapeng Hu, <b>Jian Liang<sup>&#129333</sup></b>, Qibin Hou, Hanshu Yan, Yunpeng Chen.<br>
 <i>IEEE Transactions on Image Processing (TIP), 2021</i><br>
 [<a href="./assets/paper/tip21.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://arxiv.org/abs/2003.13274"><span id="paperlink">Link</span></a>]
@@ -623,7 +647,7 @@ Abstract: A central challenge in training classification models in the real-worl
 </dd><br>
 </i></div></details>
 
-Mi Luo, Fei Chen, Dapeng Hu, Yifan Zhang, <b>Jian Liang<sup>&#x1F6A9</sup></b>, Jiashi Feng<sup>&#x1F6A9</sup>.<br>
+Mi Luo, Fei Chen, Dapeng Hu, Yifan Zhang, <b>Jian Liang<sup>&#129333</sup></b>, Jiashi Feng<sup>&#129333</sup>.<br>
 <i>Annual Conference on Neural Information Processing Systems (NeurIPS), 2021</i><br>
 [<a href="./assets/paper/neurips21a.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://openreview.net/forum?id=AFiH_CNnVhS"><span id="paperlink">Link</span></a>]
@@ -757,7 +781,7 @@ Abstract: Partial person re-identification (re-id) is a challenging problem, whe
 </dd><br>
 </i></div></details>
 
-Lingxiao He&#x1F947, <b>Jian Liang&#x1F947</b>, Haiqing Li, Zhenan Sun.<br>
+Lingxiao He<sup>&#x1F947</sup>, <b>Jian Liang<sup>&#x1F947</sup></b>, Haiqing Li, Zhenan Sun.<br>
 <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2018</i><br>
 [<a href="./assets/paper/cvpr18.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://openaccess.thecvf.com/content_cvpr_2018/html/He_Deep_Spatial_Feature_CVPR_2018_paper.html"><span id="paperlink">Link</span></a>]
@@ -788,7 +812,7 @@ Abstract: Extracting the domain-invariant features provides an important intuiti
 </dd><br>
 </i></div></details>
 
-Jianze Wei&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Ran He, Jinfeng Yang.<br>
+Jianze Wei<sup>&#x1F947</sup>, <b>Jian Liang<sup>&#x1F947&#129333</sup></b>, Ran He, Jinfeng Yang.<br>
 <i>IEEE International Conference on Multimedia and Expo (ICME), 2018 (Oral)</i><br>
 [<a href="./assets/paper/icme18.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://ieeexplore.ieee.org/abstract/document/8486446"><span id="paperlink">Link</span></a>]
@@ -805,7 +829,7 @@ Abstract: Hashing techniques have been widely adopted for cross-modal retrieval 
 </dd><br>
 </i></div></details>
 
-Dekui Ma&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Ran He, Xiangwei Kong.<br>
+Dekui Ma<sup>&#x1F947</sup>, <b>Jian Liang<sup>&#x1F947&#129333</sup></b>, Ran He, Xiangwei Kong.<br>
 <i>IEEE MultiMedia (IEEE MM), 2017</i><br>
 [<a href="./assets/paper/ieeemm17.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://ieeexplore.ieee.org/abstract/document/7924203/"><span id="paperlink">Link</span></a>]
@@ -837,7 +861,7 @@ Abstract: Cross-modal matching methods match data from different modalities acco
 </dd><br>
 </i></div></details>
 
-Jian Liang&#x1F947, Zhihang Li&#x1F947, Dong Cao, Ran He, Jingdong Wang.<br>
+Jian Liang<sup>&#x1F947</sup>, Zhihang Li<sup>&#x1F947</sup>, Dong Cao, Ran He, Jingdong Wang.<br>
 <i>International ACM SIGIR conference on Research and Development in Information Retrieval (SIGIR), 2016 (Oral)</i><br>
 [<a href="./assets/paper/sigir16.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://dl.acm.org/doi/10.1145/2911451.2911527"><span id="paperlink">Link</span></a>]
@@ -872,7 +896,7 @@ Abstract: Cross-modal hashing has attracted considerable attention due to its lo
 </dd><br>
 </i></div></details>
 
-Dekui Ma&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Xiangwei Kong, Ran He, Ying Li.<br>
+Dekui Ma<sup>&#x1F947</sup>, <b>Jian Liang<sup>&#x1F947&#129333</sup></b>, Xiangwei Kong, Ran He, Ying Li.<br>
 <i>Annual ACM Conference on Multimedia Conference (ACM MM), 2016</i><br>
 [<a href="./assets/paper/acmmm16.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://dl.acm.org/doi/abs/10.1145/2964284.2967218"><span id="paperlink">Link</span></a>]
@@ -889,7 +913,7 @@ Abstract: Hashing techniques have been widely adopted for cross-modal retrieval 
 </dd><br> 
 </i></div></details>
 
-Dekui Ma&#x1F947, <b>Jian Liang&#x1F947&#x1F6A9</b>, Xiangwei Kong, Ran He.<br>
+Dekui Ma<sup>&#x1F947</sup>, <b>Jian Liang<sup>&#x1F947&#129333</sup></b>, Xiangwei Kong, Ran He.<br>
 <i>IEEE International Symposium on Multimedia (ISM), <span style="color: red">Best Paper Candidate</span>, 2016</i><br>
 [<a href="./assets/paper/ism16.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://ieeexplore.ieee.org/abstract/document/7823584"><span id="paperlink">Link</span></a>]
@@ -905,7 +929,7 @@ Abstract: Learning based hashing techniques have attracted broad research intere
 </dd><br>
 </i></div></details>
 
-Shu Zhang&#x1F947, <b>Jian Liang&#x1F947</b>, Ran He, Zhenan Sun.<br>
+Shu Zhang<sup>&#x1F947</sup>, <b>Jian Liang<sup>&#x1F947</sup></b>, Ran He, Zhenan Sun.<br>
 <i>IEEE Transactions on Big Data (TBD), 2015</i><br>
 [<a href="./assets/paper/tbd15.pdf"><span id="paper">Paper</span></a>]
 [<a href="https://ieeexplore.ieee.org/abstract/document/7327170/"><span id="paperlink">Link</span></a>]
