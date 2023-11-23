@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="ali.css" type="text/css" />
+<title>Jian Liang</title>
+<link rel="shortcut icon" href="assets/JL.ico" />
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+<style>
+#conf_name{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size:18px;
+  color:#6495ED;
+}
+#conf_date{
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size:18px;
+  color:#A52A2A;
+}
+</style>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="experience.html" class="current">Experience</a></div>
+<div class="menu-item"><a href="education.html">Education</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="publications.html" class="current">Publication</a></div>
+<div class="menu-item"><a href="activity.html">Activity</a></div>
+<div class="menu-item"><a href="miscellaneous.html">Miscellaneous</a></div>
+<div class="menu-item"><a href="deadlines.html">Deadline</a></div>
+</td>
+<td id="layout-content">
+<h1>Deadlines</h1>
+
+<div id="sp3"></div>
+<div id="ijcai"></div>
+<div id="icml"></div>
+<div id="us"></div>
+<div id="eccv"></div>
+
+<script>
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = new Date("Dec 7, 2023 20:00").getTime() - now;
+  var conference = "<div id='conf_name'> 1️⃣ IEEE S&P (May 20 - 23, 2024 San Francisco, USA.)</div>"
+  if (distance < 0) {clearInterval(x); document.getElementById("sp3").innerHTML = conference + "<div id='conf_date'>EXPIRED</div><br>";}
+  else {
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("sp3").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + minutes + " minutes</div><br>";
+  }
+}, 100);
+</script>
+
+<script>
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = new Date("Jan 18, 2024 20:00").getTime() - now;
+  var conference = "<div id='conf_name'> 3️⃣ IJCAI (August 3 - 9, 2024 Jeju Island, South Korea.)</div>"
+  if (distance < 0) {clearInterval(x); document.getElementById("ijcai").innerHTML = conference + "<div id='conf_date'>EXPIRED</div><br>";}
+  else {
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("ijcai").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + minutes + " minutes</div><br>";
+  }
+}, 100);
+</script>
+
+<script>
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = new Date("Feb 2, 2024 20:00").getTime() - now;
+  var conference = "<div id='conf_name'> 1️⃣  ICML (July 21 - 27, 2024 Vienna, Austria.)</div>"
+  if (distance < 0) {clearInterval(x); document.getElementById("icml").innerHTML = conference + "<div id='conf_date'>EXPIRED</div><br>";}
+  else {
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("icml").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + minutes + " minutes</div><br>";
+  }
+}, 100);
+</script>
+
+<script>
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = new Date("Feb 9, 2024 20:00").getTime() - now;
+  var conference = "<div id='conf_name'> 1️⃣  USENIX Security (August 14 – 16, 2024 Philadelphia, USA.)</div>"
+  if (distance < 0) {clearInterval(x); document.getElementById("us").innerHTML = conference + "<div id='conf_date'>EXPIRED</div><br>";}
+  else {
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("us").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + minutes + " minutes</div><br>";
+  }
+}, 100);
+</script>
+
+<script>
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = new Date("Mar 8, 2024 20:00").getTime() - now;
+  var conference = "<div id='conf_name'> 2️⃣ ECCV (September 29 - October 4, 2024 MiCo Milano, Italy.)</div>"
+  if (distance < 0) {clearInterval(x); document.getElementById("eccv").innerHTML = conference + "<div id='conf_date'>EXPIRED</div><br>";}
+  else {
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("eccv").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + minutes + " minutes</div><br>";
+  }
+}, 100);
+</script>
+
+
+<!-- 
+<script>
+var countDownDate = new Date("Dec 16, 2023 20:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  if (distance < 0) {clearInterval(x); document.getElementById("demo").innerHTML = "EXPIRED";}
+  else {
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("demo3").innerHTML = "<b>NAACL</b> : " + days + " days " + hours + " hours " + minutes + " minutes";
+  }
+}, 100);
+</script>
+
+
+<script>
+var countDownDate = new Date("Dec 16, 2023 20:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  if (distance < 0) {clearInterval(x); document.getElementById("demo").innerHTML = "EXPIRED";}
+  else {
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("demo4").innerHTML = "<b>NAACL</b> : " + days + " days " + hours + " hours " + minutes + " minutes";
+  }
+}, 100);
+</script>
+
+<script>
+var countDownDate = new Date("Dec 16, 2023 20:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  if (distance < 0) {clearInterval(x); document.getElementById("demo").innerHTML = "EXPIRED";}
+  else {
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    document.getElementById("demo5").innerHTML = "<b>NAACL</b> : " + days + " days " + hours + " hours " + minutes + " minutes";
+  }
+}, 100);
+</script> -->
+
+<br>
+<div id="footer">
+<div id="footer-text">
+Last updated on June 9th, 2022. The CSS file is adapted from <a href="https://people.eecs.berkeley.edu/~brecht/" target="blank">Ben Recht's webpage</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
