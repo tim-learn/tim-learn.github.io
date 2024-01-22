@@ -50,6 +50,7 @@ MathJax.Hub.Config({
 <div id="icml"></div>
 <div id="us"></div>
 <div id="eccv"></div>
+<div id="ccs2"></div>
 
 <!-- <script>
 var x = setInterval(function() {
@@ -60,8 +61,7 @@ var x = setInterval(function() {
   else {
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    document.getElementById("sp3").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + minutes + " minutes</div><br>";
+    document.getElementById("sp3").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + "</div><br>";
   }
 }, 100);
 </script> 
@@ -76,8 +76,7 @@ var x = setInterval(function() {
   else {
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    document.getElementById("ijcai").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + minutes + " minutes</div><br>";
+    document.getElementById("ijcai").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + "</div><br>";
   }
 }, 100);
 </script>
@@ -92,8 +91,7 @@ var x = setInterval(function() {
   else {
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    document.getElementById("icml").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + minutes + " minutes</div><br>";
+    document.getElementById("icml").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + "</div><br>";
   }
 }, 100);
 </script>
@@ -107,8 +105,7 @@ var x = setInterval(function() {
   else {
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    document.getElementById("us").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + minutes + " minutes</div><br>";
+    document.getElementById("us").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + "</div><br>";
   }
 }, 100);
 </script>
@@ -122,12 +119,24 @@ var x = setInterval(function() {
   else {
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    document.getElementById("eccv").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + minutes + " minutes</div><br>";
+    document.getElementById("eccv").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + "</div><br>";
   }
 }, 100);
 </script>
 
+<script>
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = new Date("April 15, 2024 20:00").getTime() - now;
+  var conference = "<div id='conf_name'> 1️⃣ ACM CCS (October 14 - 18, 2024 Salt Lake City, USA.)</div>"
+  if (distance < 0) {clearInterval(x); document.getElementById("ccs2").innerHTML = conference + "<div id='conf_date'>EXPIRED</div><br>";}
+  else {
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    document.getElementById("ccs2").innerHTML = conference + "<div id='conf_date'> &#9202 " + days + " days " + hours + " hours " + "</div><br>";
+  }
+}, 100);
+</script> 
 
 <!-- 
 <script>
