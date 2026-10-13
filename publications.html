@@ -186,21 +186,6 @@ Shuo Lu, Yinuo Xu, Jianjie Cheng, Meng Wang, Qianlong Xie, Xingxing Wang, Ran He
 
 
 <details><summary>
-<strong>Reassessing the Role of Supervised Fine-Tuning: An Empirical Study in VLM Reasoning</strong>
-<br></summary>
-<div id="abstract"><i>
-<dd><br>
-Abstract: 
-</dd><br>
-</i></div></details>
-Yongcan Yu, Lingxiao He, Shuo Lu, Lijun Sheng, Yinuo Xu, Yanbo Wang, Kuangpu Guo, Jianjie Cheng, Meng Wang, Qianlong Xie, Xingxing Wang, Dapeng Hu, Jian Liang<sup>&copy;</sup><br>
-<i>Arxiv technical report, 2025</i><br>
-<a href="https://arxiv.org/pdf/2512.12690.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2512.12690"><span id="paperlink">Link</span></a>
-<br><br>
-
-
-<details><summary>
 <strong>SafeRBench: Dissecting the Reasoning Safety of Large Language Models</strong>
 <br></summary>
 <div id="abstract"><i>
@@ -212,22 +197,6 @@ Xin Gao, Shaohan Yu, Zerui Chen, Yueming Lyu, Weichen Yu, Guanghao Li, Jiyao Liu
 <i>Arxiv technical report, 2025</i><br>
 <a href="https://arxiv.org/pdf/2511.15169.pdf"><span id="paper">Paper</span></a> / 
 <a href="https://arxiv.org/abs/2511.15169"><span id="paperlink">Link</span></a>
-<br><br>
-
-
-<details><summary>
-<strong>To Trust Or Not To Trust Your Vision-Language Model's Prediction</strong>
-<br></summary>
-<div id="abstract"><i>
-<dd><br>
-Abstract: 
-</dd><br>
-</i></div></details>
-Hao Dong, Moru Liu, Jian Liang, Eleni Chatzi, Olga Fink<br>
-<i>Arxiv technical report, 2025</i><br>
-<a href="https://arxiv.org/pdf/2505.23745.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2505.23745"><span id="paperlink">Link</span></a> / 
-<a href="https://github.com/EPFL-IMOS/TrustVLM"><span id="papercode">Code</span></a>
 <br><br>
 
 
@@ -604,13 +573,44 @@ Yuhe Ding, Bo Jiang, Lijun Sheng, Aihua Zheng, Jian Liang<sup>&copy;</sup><br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Unsupervised anomaly detection in time series data is crucial for identifying unusual patterns across various fields. However, existing methods often struggle when dealing with non-stationary time series, constraining their practical application. In this paper, we delve into the challenges surrounding non-stationary time series and put forward a novel framework along with a test-time adaptation strategy. When it comes to the framework, non-stationary time series pose difficulties for modeling due to their blend of time-invariant statistics and evolving temporal dependencies. To address this issue, we explicitly break down the input into variant and invariant components through spectral analysis, with the aim of separately modeling these aspects. Besides, the absence of anomalies during training leads to significant distribution discrepancies between training and testing phases, which is ignored by most existing methods. To deal with this, we propose a flexible test-time adaptation strategy to further amplify the normal-abnormal distinguishability. Our proposed Spectral Decomposition and Adaptation method (SDA) outperforms existing detection frameworks in terms of effectiveness and efficiency. Specifically, compared to state-of-the-art models, SDA achieves superior performance while reducing training time by 𝟔𝟔.𝟐% and memory usage by 𝟗𝟖.𝟖%.
 </dd><br>
 </i></div></details>
 Huanyu Zhang, Yi-Fan Zhang, Jian Liang, Zhang Zhang, Liang Wang<br>
 <i>Neurocomputing, 2026</i><br>
 <a href="./assets/paper/neuocomputing.pdf"><span id="paper">Paper</span></a> / 
 <a href="https://www.sciencedirect.com/science/article/pii/S0925231225026505"><span id="paperlink">Link</span></a>
+<br><br>
+
+
+<details><summary>
+<strong>Reassessing the Role of Supervised Fine-Tuning and Reinforcement Learning: An Empirical Study in VLM Reasoning</strong>
+<br></summary>
+<div id="abstract"><i>
+<dd><br>
+Abstract: Recent advances in vision-language model (VLM) reasoning have been largely attributed to the rise of reinforcement learning (RL), which has shifted the community’s focus away from the supervised fine-tuning (SFT) paradigm. Many studies suggest that introducing the SFT stage not only fails to improve reasoning ability but may also negatively impact model training. In this study, we revisit this RL-centric belief through a systematic and controlled comparison of SFT and RL on VLM reasoning. Using identical data sources, we find that the relative effectiveness of SFT and RL is conditional and strongly influenced by model capacity, data scale, and data distribution. Contrary to common assumptions, our findings show that SFT plays a crucial role across several scenarios: (1) Effectiveness for weaker models. SFT more reliably elicits reasoning capabilities in smaller or weaker VLMs. (2) Data efficiency. SFT with only 2K achieves comparable or better reasoning performance on average to RL with 20K. (3) Cross-modal transferability. SFT shows stronger generalization across modalities. Moreover, we identify a pervasive issue of reward--test misalignment, where higher rewards fail to correlate with better reasoning accuracy in RL. These results challenge the prevailing ``RL over SFT" narrative. They highlight that the role of SFT may have been underestimated and support a more balanced post-training pipeline in which SFT and RL function as complementary components.
+</dd><br>
+</i></div></details>
+Yongcan Yu, Lingxiao He, Shuo Lu, Lijun Sheng, Yinuo Xu, Yanbo Wang, Kuangpu Guo, Jianjie Cheng, Meng Wang, Qianlong Xie, Xingxing Wang, Dapeng Hu, Jian Liang<sup>&copy;</sup><br>
+<i>Transactions on Machine Learning Research (TMLR), 2026</i><br>
+<a href="https://arxiv.org/pdf/2512.12690.pdf"><span id="paper">Paper</span></a> / 
+<a href="https://openreview.net/forum?id=EWk0VxDpax"><span id="paperlink">Link</span></a>
+<br><br>
+
+
+<details><summary>
+<strong>To Trust Or Not To Trust Your Vision-Language Model's Prediction</strong>
+<br></summary>
+<div id="abstract"><i>
+<dd><br>
+Abstract: Vision-Language Models (VLMs) have demonstrated strong capabilities in aligning visual and textual modalities, enabling a wide range of applications in multimodal understanding and generation. While they excel in zero-shot and transfer learning scenarios, VLMs remain susceptible to misclassification, often yielding confident yet incorrect predictions. This limitation poses a significant risk in safety-critical domains, where erroneous predictions can lead to severe consequences. In this work, we introduce TrustVLM, a training-free framework designed to address the critical challenge of estimating when VLM’s predictions can be trusted. Motivated by the observed modality gap in VLMs and the insight that certain concepts are more distinctly represented in the image embedding space, we propose a novel confidence-scoring function that leverages this space to improve misclassification detection. We rigorously evaluate our approach across 17 diverse datasets, employing 4 architectures and 2 VLMs, and demonstrate state-of-the-art performance, with improvements of up to 51.87% in AURC, 9.14% in AUROC, and 32.42% in FPR95 compared to existing baselines. By improving the reliability of the model without requiring retraining, TrustVLM paves the way for safer deployment of VLMs in real-world applications. 
+</dd><br>
+</i></div></details>
+Hao Dong, Moru Liu, Jian Liang, Eleni Chatzi, Olga Fink<br>
+<i>Transactions on Machine Learning Research (TMLR), 2026</i><br>
+<a href="https://arxiv.org/pdf/2505.23745.pdf"><span id="paper">Paper</span></a> / 
+<a href="https://openreview.net/forum?id=S2SdvYaPKm"><span id="paperlink">Link</span></a> / 
+<a href="https://github.com/EPFL-IMOS/TrustVLM"><span id="papercode">Code</span></a>
 <br><br>
 
 
@@ -761,13 +761,13 @@ Yuting Xu<sup>&#9839;</sup>, Jiayi Tian<sup>&#9839;</sup>, Jian Liang, Xin Xiong
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Model merging has emerged as a promising paradigm for enabling multi-task capabilities without additional training. However, traditional basic merging methods often experience performance degradation due to parameter conflicts, even when applied to similar tasks. While recent personalized merging frameworks successfully preserve task-specific information to maintain performance, they typically incur storage overhead. In this paper, we propose Decomposition, Thresholding, and Scaling (DTS), an approximation-based personalized merging framework that pushes task-specific storage efficiency. DTS first applies singular value decomposition to the task-specific information and retains only a small subset of singular values and vectors. It then introduces a novel thresholding strategy that partitions singular vector elements into groups and assigns a scaling factor to each group. To enable generalization to unseen tasks, we further extend DTS with a variant that fuses task-specific information in a data-free manner based on the semantic similarity of task characteristics. Extensive experiments demonstrate that DTS consistently outperforms state-of-the-art baselines while requiring only 1% extra storage per task. Furthermore, experiments on unseen tasks show that the DTS variant achieves significantly better generalization performance.
 </dd><br>
 </i></div></details>
 Kuangpu Guo, Aijing Yu, Jian Liang<sup>&copy;</sup>, Yuhe Ding, Zilei Wang, Ran He, Tieniu Tan<br>
 <i>European Conference on Computer Vision (ECCV), 2026</i><br>
 <a href="https://arxiv.org/pdf/2512.01461.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2512.01461"><span id="paperlink">Link</span></a> / 
+<a href="https://link.springer.com/chapter/10.1007/978-3-032-37556-8_22"><span id="paperlink">Link</span></a> / 
 <a href="https://github.com/krumpguo/DTS"><span id="papercode">Code</span></a>
 <br><br>
 
@@ -777,13 +777,13 @@ Kuangpu Guo, Aijing Yu, Jian Liang<sup>&copy;</sup>, Yuhe Ding, Zilei Wang, Ran 
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: The training-free integration of expert models via modelmerging has exposed significant security risks, enabling free-riders tocombine specialized models without authorization. Recent works pro-pose parameter-level defenses that employ linear parameter transforma-tions to neutralize this threat. In this paper, we systematically analyzesuch defenses and reveal that their protected task vectors are inherentlysmall in magnitude. Consequently, the protected weights remain over-whelmingly dominated by the pretrained model. Based on this observa-tion, we designate the pretrained model as a static reference anchor andpropose the Anchor-Guided Attack (AGA) to circumvent existing safe-guards. Specifically, AGA aligns the protected model with this anchorto recover the transformation matrix analytically. Extensive evaluationsvalidate that AGA consistently bypasses both individual and compositedefenses under realistic defense-agnostic scenarios. Furthermore, we pro-vide Anchor-Repulsive Fine-tuning (ARF), a defense method to mitigatethe anchor dominance leveraged by AGA. Empirical results confirm thatARF effectively defeats the proposed attack.
 </dd><br>
 </i></div></details>
 Kuangpu Guo, Qingyan Zheng, Jian Liang<sup>&copy;</sup>, Yongcan Yu, Zilei Wang, Ran He, Tieniu Tan<br>
 <i>European Conference on Computer Vision (ECCV), 2026</i><br>
 <a href="https://arxiv.org/pdf/2606.30360.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2606.30360"><span id="paperlink">Link</span></a> /
+<a href="https://link.springer.com/chapter/10.1007/978-3-032-37335-9_25"><span id="paperlink">Link</span></a> /
 <a href="https://github.com/krumpguo/secure-merge-attack"><span id="papercode">Code</span></a>
 <br><br>
 
@@ -793,13 +793,13 @@ Kuangpu Guo, Qingyan Zheng, Jian Liang<sup>&copy;</sup>, Yongcan Yu, Zilei Wang,
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Test-time adaptation (TTA) has emerged as a prominent strategy for adapting vision-language models to distribution shifts during inference. We conduct a per-sample analysis of model predictions before and after adaptation, and observe two failure modes in existing TTA methods that echo previous work. Adaptations are frequently negligible, yielding no change in the model’s predictions, and more severely, they can be detrimental by flipping previously correct predictions to incorrect ones. This naturally raises a question: Can we identify and skip such negligible or harmful adaptations? In this work, we introduce a new problem of selective adaptation, which aims to determine whether a given test sample should undergo adaptation or be skipped. To this end, we propose Cross-Augmentation Similarity (CAS), a simple baseline that performs adaptation only when predictions across augmented views exhibit low similarity. Notably, CAS not only preserves but in some cases improves overall accuracy, even when skipping nearly 85% of the adaptation process. We hope other researchers will explore this new direction and surpass the performance of our baseline.
 </dd><br>
 </i></div></details>
 Siru Jiang<sup>&#9839;</sup>, Yuwei Liang<sup>&#9839;</sup>, Jian Liang<sup>&copy;</sup>, Ran He, Tieniu Tan<br>
 <i>European Conference on Computer Vision (ECCV), 2026</i><br>
 <a href="https://arxiv.org/pdf/2609.08367.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2609.08367"><span id="paperlink">Link</span></a> /
+<a href="https://link.springer.com/chapter/10.1007/978-3-032-37252-9_23"><span id="paperlink">Link</span></a> /
 <a href="https://github.com/sirujiang/selective-adaptation"><span id="papercode">Code</span></a>
 <br><br>
 
@@ -809,13 +809,13 @@ Siru Jiang<sup>&#9839;</sup>, Yuwei Liang<sup>&#9839;</sup>, Jian Liang<sup>&cop
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Test-Time Reinforcement Learning (TTRL) enables Large Language Models (LLMs) to enhance reasoning capabilities on unlabeled test streams by deriving pseudo-rewards from majority voting consensus.However, existing TTRL methods rely exclusively on positive pseudo-labeling strategies.Such reliance becomes vulnerable under challenging scenarios where answer distributions are highly dispersed, resulting in weak consensus that inadvertently reinforces incorrect trajectories as supervision signals.In this paper, we propose SCRL (Selective-Complementary Reinforcement Learning), a robust test-time reinforcement learning framework that effectively mitigates label noise amplification.SCRL develops Selective Positive Pseudo-Labeling, which enforces strict consensus criteria to filter unreliable majorities. Complementarily, SCRL introduces Entropy-Gated Negative Pseudo-Labeling, the first negative supervision mechanism in TTRL, to reliably prune incorrect trajectories based on generation uncertainty. Extensive experiments on mathematical reasoning benchmarks demonstrate that SCRL achieves substantial improvements over baselines, while maintaining robust generalization and training stability under constrained rollout budgets.
 </dd><br>
 </i></div></details>
 Dong Yan, Jian Liang<sup>&copy;</sup>, Yanbo Wang, Shuo Lu, Ran He, Tieniu Tan<br>
 <i>Annual Meeting of the Association for Computational Linguistics (ACL), 2026</i><br>
 <a href="https://arxiv.org/pdf/2603.19880.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2603.19880"><span id="paperlink">Link</span></a> / 
+<a href="https://aclanthology.org/2026.acl-long.1337/"><span id="paperlink">Link</span></a> / 
 <a href="https://github.com/Jasper-Yan/SCRL"><span id="papercode">Code</span></a>
 <br><br>
 
@@ -825,13 +825,13 @@ Dong Yan, Jian Liang<sup>&copy;</sup>, Yanbo Wang, Shuo Lu, Ran He, Tieniu Tan<b
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Test-time reinforcement learning (TTRL) always adapts models at inference time via pseudo-labeling, leaving it vulnerable to spurious optimization signals from label noise.Through an empirical study, we observe that responses with medium consistency form an ambiguity region and constitute the primary source of reward noise.Crucially, we find that such spurious signals can be even amplified through group-relative advantage estimation.Motivated by these findings, we propose a unified framework, Debiased and Denoised test-time Reinforcement Learning (DDRL), to mitigate spurious signals.Concretely, DDRL first applies a frequency-based sampling strategy to exclude ambiguous samples while maintaining a balanced set of positive and negative examples.It then adopts a debiased advantage estimation with fixed advantages, removing the bias introduced by group-relative policy optimization.Finally, DDRL incorporates a consensus-based off-policy refinement stage, which leverages the rejection-sampled dataset to enable efficient and stable model updates.Experiments on three large language models across multiple mathematical reasoning benchmarks demonstrate that DDRL consistently outperforms existing TTRL baselines.
 </dd><br>
 </i></div></details>
 Yongcan Yu, Lingxiao He, Jian Liang<sup>&copy;</sup>, Kuangpu Guo, Meng Wang, Qianlong Xie, Xingxing Wang, Ran He<br>
 <i>Annual Meeting of the Association for Computational Linguistics (ACL), Findings, 2026</i><br>
 <a href="https://arxiv.org/pdf/2604.21327.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2604.21327"><span id="paperlink">Link</span></a> / 
+<a href="https://aclanthology.org/2026.findings-acl.1865/"><span id="paperlink">Link</span></a> / 
 <a href="https://github.com/yuyongcan/DDRL"><span id="papercode">Code</span></a>
 <br><br>
 
@@ -879,7 +879,7 @@ Abstract:
 Shuo Lu<sup>&#9839;</sup>, Jianjie Cheng<sup>&#9839;</sup>, Yinuo Xu, Yongcan Yu, Lijun Sheng, Peijie Wang, Siru Jiang, Yongguan Hu, Lingxiao He, Meng Wang, Qianlong Xie, Xingxing Wang, Ran He, Jian Liang<sup>&copy;</sup><br>
 <i>The Conference on Empirical Methods in Natural Language Processing (EMNLP) Findings, 2026</i><br>
 <a href="https://arxiv.org/pdf/2602.11635.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2602.11635"><span id="paperlink">Link</span></a> /
+<a href="https://openreview.net/forum?id=ZhdpXY0BwV"><span id="paperlink">Link</span></a> /
 <a href="https://shuolucs.github.io/MathSpatial/"><span id="papercode">Website</span></a>
 <br><br>
 
@@ -926,7 +926,7 @@ Abstract:
 Aijing Yu, Zhengbo Wang, Lijun Sheng, Jian Liang, Xiao-Yu Zhang<br>
 <i>International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2026</i><br>
 <a href="https://arxiv.org/pdf/xx.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/xx"><span id="paperlink">Link</span></a> 
+<a href="https://ieeexplore.ieee.org/abstract/document/11462968/"><span id="paperlink">Link</span></a> 
 <br><br>
 
 
@@ -941,7 +941,7 @@ Abstract:
 Yuguang Zhang, Lijun Sheng, Jian Liang<sup>&copy;</sup>, Ran He<br>
 <i>International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2026</i><br>
 <a href="https://arxiv.org/pdf/2601.18171.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2601.18171"><span id="paperlink">Link</span></a>
+<a href="https://ieeexplore.ieee.org/document/11461457/"><span id="paperlink">Link</span></a>
 <br><br>
 
 
