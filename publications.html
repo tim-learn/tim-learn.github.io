@@ -497,13 +497,13 @@ Yafeng Zhan, Jianze Wei, Jian Liang, Ran He, Zheng Wang<br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Vision-Language Models (VLMs) have demonstrated remarkable generalization capabilities across a wide range of tasks. However, their performance often remains suboptimal when directly applied to specific downstream scenarios without task-specific adaptation. To enhance their utility while preserving data efficiency, recent research has increasingly focused on unsupervised adaptation methods that do not rely on labeled data. Despite the growing interest in this area, there remains a lack of a unified, task-oriented survey dedicated to unsupervised VLM adaptation. To bridge this gap, we present a comprehensive and structured overview of the field. We propose a taxonomy based on the availability and nature of unlabeled visual data, categorizing existing approaches into four key paradigms: Data-Free Transfer (no data), Unsupervised Domain Transfer (abundant data), Episodic Test-Time Adaptation (batch data), and Online Test-Time Adaptation (streaming data). Within this framework, we analyze core methodologies and adaptation strategies associated with each paradigm, aiming to establish a systematic understanding of the field. Additionally, we review representative benchmarks across diverse applications and highlight open challenges and promising directions for future research
 </dd><br>
 </i></div></details>
 Hao Dong<sup>&#9839;</sup>, Lijun Sheng<sup>&#9839;</sup>, Jian Liang<sup>&copy;</sup>, Ran He, Eleni Chatzi, Olga Fink<br>
 <i>International Journal of Computer Vision (IJCV), 2026</i><br>
 <a href="https://arxiv.org/pdf/2508.05547.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2508.05547"><span id="paperlink">Link</span></a> / 
+<a href="https://link.springer.com/article/10.1007/s11263-026-02987-w"><span id="paperlink">Link</span></a> / 
 <a href="https://github.com/tim-learn/Awesome-LabelFree-VLMs"><span id="papercode">Code</span></a>
 <br><br>
 
@@ -513,7 +513,7 @@ Hao Dong<sup>&#9839;</sup>, Lijun Sheng<sup>&#9839;</sup>, Jian Liang<sup>&copy;
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: 3D reasoning is crucial in areas like robotics and autonomous driving. Due to the high cost of 3D data acquisition, some recent methods attempt to enable LLMs to perform 3D reasoning through multi-view images, thereby transferring the powerful 2D reasoning capabilities of LLMs to 3D environments. However, these methods face challenges: either they use redundant views that contain many perspectives irrelevant to the question, or they rely on globally aggregated multi-view representations, losing the fine-grained vision-language correlations. To tackle these challenges, we propose 3DMulti-LLM, which mainly consists of three components: a COT selector, a question-guided fusion block, and pre-trained LLMs. Specifically, first, the COT selector leverages the powerful chain-of-thought reasoning capabilities of LLMs to identify question-related multi-view images. In this way, 3DMulti-LLM can eliminate a substantial amount of interference from unnecessary viewpoints. Then, we propose a question-guided fusion block for integrating multi-view features via question-guided interaction among various viewpoints. Finally, the pre-trained LLMs are utilized to reason in 3D scenes directly through multi-view features. Notably, our approach understands the 3D scene solely through multi-view images, without requiring the input of point cloud information or additional 3D feature extraction. Through our experiments, 3DMulti-LLM achieves impressive performance and surpasses existing 3D-input-free methods by + 12.2% and + 7.1% on ScanQA and 3DMV-VQA datasets, respectively.
 </dd><br> 
 </i></div></details>
 Boqiang Xu, Jinlin Wu, Wei Zhang, Chenyang Su, Jian Liang, Zhenan Sun, Zhen Lei<br>
@@ -528,7 +528,7 @@ Boqiang Xu, Jinlin Wu, Wei Zhang, Chenyang Su, Jian Liang, Zhenan Sun, Zhen Lei<
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Recent advances in surgical robotics and computer vision have greatly improved intelligent systems’ autonomy and perception in the operating room (OR), especially in endoscopic and minimally invasive surgeries. However, for open surgery, which is still the predominant form of surgical intervention worldwide, there has been relatively limited exploration due to its inherent complexity and the lack of large-scale, diverse datasets. To close this gap, we present OpenSurgery, by far the largest video–text pretraining and evaluation dataset for open surgery understanding. OpenSurgery consists of two subsets: OpenSurgery-Pretrain and OpenSurgery-EVAL. OpenSurgery-Pretrain consists of 843 publicly available open surgery videos for pretraining, spanning 102 hours and encompassing over 20 distinct surgical types. OpenSurgery-EVAL is a benchmark dataset for evaluating model performance in open surgery understanding, comprising 280 training and 120 test videos, totaling 49 hours. Each video in OpenSurgery is meticulously annotated by expert surgeons at three hierarchical levels of video, operation, and frame to ensure both high quality and strong clinical applicability. Next, we propose the Hierarchical Surgical Knowledge Pretraining (HierSKP) framework to facilitate large-scale multimodal representation learning for open surgery understanding. HierSKP leverages a granularity-aware contrastive learning strategy and enhances procedural comprehension by constructing hard negative samples and incorporating a Dynamic Time Warping (DTW)-based loss to capture fine-grained temporal alignment of visual semantics. Extensive experiments show that HierSKP achieves state-of-the-art performance on OpenSurgegy-EVAL across multiple tasks, including operation recognition, temporal action localization, and zero-shot cross-modal retrieval. This demonstrates its strong generalizability for further advances in open surgery understanding.
 </dd><br> 
 </i></div></details>
 Boqiang Xu, Jinlin Wu, Jian Liang, Zhenan Sun, Hongbin Liu, Jiebo Luo, Zhen Lei<br>
@@ -543,7 +543,7 @@ Boqiang Xu, Jinlin Wu, Jian Liang, Zhenan Sun, Hongbin Liu, Jiebo Luo, Zhen Lei<
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Vision language models (VLMs) like CLIP show stellar zero-shot capability on classification benchmarks. However, selecting the VLM with the highest performance on the unlabeled downstream task is non-trivial. Existing VLM selection methods focus on the class-name-only setting, relying on supervised auxiliary datasets and large language models, which may not be accessible or feasible during deployment. This paper introduces the problem of unsupervised vision-language model selection, where only unsupervised downstream datasets are available, with no additional information provided. To solve this problem, we propose a method termed Visual-tExtual Graph Alignment (VEGA), to select VLMs without any annotations by measuring the alignment of the VLM between the two modalities on the downstream task. VEGA is motivated by the pretraining paradigm of VLMs, which aligns features with the same semantics from the visual and textual modalities, thereby mapping both modalities into a shared representation space. Specifically, we first construct two graphs on the vision and textual features, respectively. VEGA is then defined as the overall similarity between the visual and textual graphs at both node and edge levels. Extensive experiments across three different benchmarks, covering a variety of application scenarios and downstream datasets, demonstrate that VEGA consistently provides reliable and accurate estimates of VLMs’ performance on unlabeled downstream tasks.
 </dd><br>
 </i></div></details>
 Yuhe Ding, Bo Jiang, Aihua Zheng, Qin Xu, Jian Liang<br>
@@ -558,13 +558,14 @@ Yuhe Ding, Bo Jiang, Aihua Zheng, Qin Xu, Jian Liang<br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Transferability estimation aims to provide heuristics for quantifying how suitable a pre-trained model is for a specific downstream task, without fine-tuning them all. Existing methods embed target datasets into the feature space defined by the pre-trained model, guided by the common intuition that an ideal initial feature space has a clear decision boundary. However, these methods largely focus on separability and insufficiently account for class distribution bias inherited from the source domain and imprinted on the feature manifold, which can critically affect downstream fine-tuning performance. This paper tackles this problem and proposes a simple yet effective transferability estimation method, termed HarmOnizing Class Uniformity and Separability (HOCUS). HOCUS includes a baseline class separability score and a novel class uniformity score, formulated as the entropy of the class distribution overlap matrix. The proposed uniformity score is flexible and can be easily integrated as a plug-and-play module into existing methods. We investigate our method on a variety of pre-trained classification models across different network architectures, source datasets, and training loss functions. Experimental results demonstrate that HOCUS achieves state-of-the-art performance in terms of Pearson and Kendall correlation across diverse model zoos, and that the class proposed uniformity score consistently enhances existing methods. 
 </dd><br> 
 </i></div></details>
 Yuhe Ding, Bo Jiang, Lijun Sheng, Aihua Zheng, Jian Liang<sup>&copy;</sup><br>
 <i>Pattern Recognition (PR), 2026</i><br>
 <a href="https://arxiv.org/pdf/2310.05754.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2310.05754"><span id="paperlink">Link</span></a>
+<a href="sciencedirect.com/science/article/pii/S0031320326008629"><span id="paperlink">Link</span></a> / 
+<a href="https://github.com/YuheD/HOCUS"><span id="paperlink">Link</span></a>
 <br><br>
 
 
@@ -619,7 +620,7 @@ Hao Dong, Moru Liu, Jian Liang, Eleni Chatzi, Olga Fink<br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Test-time adaptation (TTA) has emerged as a popular paradigm for improving the performance of vision-language models (e.g., CLIP) on downstream tasks. Among existing CLIP-based TTA methods, Test-Time Prompt Tuning (TPT) is a pioneering work that optimizes textual prompts using multiple test-time augmentations and remains a strong baseline to date. In this work, we revisit TPT and reveal that its optimization can be interpreted as implicitly learning from self-generated pseudo labels. Building on this perspective, we propose a unified self-ensembling framework (USE) that ensures consistency between the optimization and inference stages. During optimization, we introduce a simple yet effective self-ensembling (SE) strategy that emphasizes the test image itself over its augmented views adaptively to obtain more reliable pseudo labels. To fully exploit the potential of augmentations, we further apply the same strategy at inference time, unifying the objectives of both stages. Notably, SE can also act as a lightweight optimization-free TTA method. Extensive experiments across multiple datasets demonstrate that SE and USE outperform their counterparts, respectively. Furthermore, SE yields consistent performance gains when integrated with existing TTA methods.
 </dd><br>
 </i></div></details>
 Siru Jiang, Jian Liang<sup>&copy;</sup>, Ran He, Tieniu Tan<br>
@@ -635,7 +636,7 @@ Siru Jiang, Jian Liang<sup>&copy;</sup>, Ran He, Tieniu Tan<br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: While reasoning models have achieved remarkable success in complex reasoning tasks, their increasing power necessitates stringent safety measures. For safety alignment, the core challenge lies in the inherent trade-off between safety and utility. However, prevailing alignment strategies typically construct CoT training data with explicit safety rules via context distillation. This approach inadvertently limits reasoning capabilities by creating a rigid association between rule memorization and refusal. To mitigate the safety-utility trade-off, we propose the Adaptive Safe Context Learning~(ASCL) framework to improve the reasoning given proper context. ASCL formulates safety alignment as a multi-turn tool-use process, empowering the model to autonomously decide when to consult safety rules and how to generate the ongoing reasoning. Furthermore, to counteract the preference for rule consultation during RL, we introduce Inverse Frequency Policy Optimization~(IFPO) to rebalance advantage estimates. By decoupling rule retrieval and subsequent reasoning, our method achieves higher overall performance compared to baselines.
 </dd><br>
 </i></div></details>
 Yanbo Wang, Minzheng Wang, Jian Liang<sup>&copy;</sup>, Lu Wang, Yongcan Yu, Ran He<br>
@@ -651,7 +652,7 @@ Yanbo Wang, Minzheng Wang, Jian Liang<sup>&copy;</sup>, Lu Wang, Yongcan Yu, Ran
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Retrieval-Augmented Generation (RAG) augments Large Language Models with timely, external information, making their retrieval corpora a prime target for data poisoning. However, existing targeted poisoning attacks exhibit limited effectiveness against RAG equipped with a reranker to enhance retrieval quality. Remarkably, this defensive benefit comes at no additional cost: a reranker fine-tuned only on benign, in-domain documents can effectively filter malicious content without any adversarial training. To realistically evaluate RAG and strengthen red-teaming efforts, we conclude practical prompt design principles that reveal reranker blind spots. Building on these insights, we introduce the Prompt-Perturbation Poisoning Attack (P3A), a novel framework for generating sophisticated poisoned documents. P3A first employs rule-based prompt engineering to craft initial poisoned texts designed to evade reranker filtering. It then injects subtle character-level perturbations into these texts, which promotes their ranking by the reranker while maintaining their adversarial effectiveness. These perturbations introduce only about 1% textual change, ensuring the poisoned texts remain natural and readable. Extensive experiments demonstrate that our methods achieve effective attack performance, compromising reranker-enhanced RAG pipelines. Furthermore, our method exhibits strong transferability, proving equally effective against vanilla RAG—offering a more realistic and challenging benchmark for evaluating defense mechanisms. 
 </dd><br>
 </i></div></details>
 Xiaokun Yang, Jian Liang<sup>&copy;</sup>, Yesheng Liu, Xin Xiong, Ran He, Tieniu Tan<br>
@@ -667,7 +668,7 @@ Xiaokun Yang, Jian Liang<sup>&copy;</sup>, Yesheng Liu, Xin Xiong, Ran He, Tieni
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Operating room (OR) scene graph generation (SGG) enables holistic modeling of OR domains by encoding interactions among medical staff, tools, and equipment as triplet-based structured scene graphs. Although existing OR SGG methods demonstrate satisfactory overall performance, they exhibit substantially lower accuracy on long-tail categories compared to head categories in OR data. We introduce SGG-ICL, a novel framework that represents the first attempt to address the long-tail problem in OR SGG by leveraging in-context learning (ICL). SGG-ICL first identifies long-tail samples via an Adaptive Router module and selectively applies ICL only to these samples. This selective routing strategy enhances performance on long-tail categories without degrading head-category accuracy. Subsequently, SGG-ICL constructs a candidate pool through multimodal retrieval and then employs a trained MLLM Reranker to re-rank the candidates, selecting the most similar examples to the test sample for ICL. The reranker is supervised by IoU scores derived from annotated SGG triplets and exploits rich multimodal information to estimate pairwise sample similarity. Experimental results show that SGG-ICL improves accuracy on long-tail categories by 6.9%, while also achieving a 2.6% improvement in overall accuracy.
 </dd><br>
 </i></div></details>
 Boqiang Xu, Wei Zhang, Ding Ma, Jian Liang<sup>&copy;</sup>, Zhenan Sun, Zhen Lei<br>
@@ -682,7 +683,7 @@ Boqiang Xu, Wei Zhang, Ding Ma, Jian Liang<sup>&copy;</sup>, Zhenan Sun, Zhen Le
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Modern optimizers like Adam and Muon are central to training large language models, but their reliance on first- and second-order momenta introduces significant memory overhead, which constrains scalability and computational efficiency. In this work, we reframe the exponential moving average (EMA) used in these momenta as the training of a linear regressor via online gradient flow. Building on this equivalence, we introduce LoRA-Pre, a novel low-rank optimizer designed for efficient pre-training. Specifically, LoRA-Pre reduces the optimizer's memory footprint by decomposing the full momentum matrix into a compact low-rank subspace within the online linear learner, thereby maintaining optimization performance while improving memory efficiency. We empirically validate LoRA-Pre's efficacy by pre-training models from the Llama architecture family, scaling from 60M to 1B parameters. LoRA-Pre achieves the highest performance across all model sizes. Notably, LoRA-Pre demonstrates remarkable rank efficiency, achieving comparable or superior results using only 1/8 the rank of baseline methods. Beyond pre-training, we evaluate LoRA-Pre's effectiveness in fine-tuning scenarios. With the same rank, LoRA-Pre consistently outperforms all efficient fine-tuning baselines. Specifically, compared to standard LoRA, LoRA-Pre achieves substantial improvements of 3.14 points on Llama-3.1-8B and 6.17 points on Llama-2-7B, validating our approach's effectiveness across both pre-training and fine-tuning paradigms.
 </dd><br>
 </i></div></details>
 Zhengbo Wang, Jian Liang<sup>&copy;</sup>, Ran He, Zilei Wang, Tieniu Tan<br>
@@ -698,7 +699,7 @@ Zhengbo Wang, Jian Liang<sup>&copy;</sup>, Ran He, Zilei Wang, Tieniu Tan<br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Recent studies have shown that large language models (LLMs) can infer private user attributes (e.g., age, location, gender) from user-generated text shared online, enabling rapid and large-scale privacy breaches. Existing anonymization-based defenses are coarse-grained, lacking word-level precision in anonymizing privacy-leaking elements. Moreover, they are inherently limited as altering user text to hide sensitive cues still allows attribute inference to occur through models' reasoning capabilities. To address these limitations, we propose a unified defense framework that combines fine-grained anonymization (TRACE) with inference-preventing optimization (RPS). TRACE leverages attention mechanisms and inference chain generation to identify and anonymize privacy-leaking textual elements, while RPS employs a lightweight two-stage optimization strategy to induce model rejection behaviors, thereby preventing attribute inference. Evaluations across diverse LLMs show that TRACE-RPS reduces attribute inference accuracy from around 50\% to below 5\% on open-source models. In addition, our approach offers strong cross-model generalization, prompt-variation robustness, and utility-privacy tradeoffs.
 </dd><br>
 </i></div></details>
 Dong Yan, Jian Liang<sup>&copy;</sup>, Ran He, Tieniu Tan<br>
@@ -730,7 +731,7 @@ Yongcan Yu, Jian Liang<sup>&copy;</sup>, Lingxiao He, Kuangpu Guo, Yanbo Wang, S
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Large language models (LLMs) are increasingly asked not only to write static interfaces, but to construct executable interactive worlds from natural language. Browser-native 3D, commonly built with this http URL, is a natural next frontier: generated programs must integrate assets, obey spatial and physical constraints, and keep user-facing controls synchronized with hidden runtime state. Existing web-generation benchmarks and evaluators, however, largely observe only pixels or DOM nodes, while the mechanics of a this http URL world unfold inside an opaque <canvas>. We introduce WorldCoder-Bench, a benchmark for autonomous, physically grounded 3D world synthesis. WorldCoder-Bench contains 2,026 expert-curated tasks across Simulation, Rendering, and Application scenarios, with optional .glb assets and hidden behavioral contracts. We further propose StateProbe, an execution-based protocol that probes generated programs in a sandboxed browser and verifies hidden, mutation-hardened contracts over runtime states and transitions. Beyond verification coverage, we report Return on Automation and Time Efficiency Multiplier to measure correctness-adjusted cost and time savings. Across nine frontier models, the best system reaches only 27.8% verification coverage on WorldCoder-Core and 19.9% on WorldCoder-Robust, with failures dominated by state-schema drift and broken interaction chains rather than missing scene elements. Utility metrics further show that cheap or fast models can still provide substantial value on easier domains.
 </dd><br>
 </i></div></details>
 Shuo Lu<sup>&#9839;</sup>, Yinuo Xu<sup>&#9839;</sup>, Kecheng Yu, Siru Jiang, Yongcan Yu, Yubin Wang, Haitao Yang, Yuxiang Zhang, Bin Wang, Ran He, Jian Liang<sup>&copy;</sup><br>
@@ -746,7 +747,7 @@ Shuo Lu<sup>&#9839;</sup>, Yinuo Xu<sup>&#9839;</sup>, Kecheng Yu, Siru Jiang, Y
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Existing benchmarks have laid the foundation for travel planning agents by establishing API-centric paradigms. However, as the capabilities of Autonomous Agents continue to advance, their evaluation must evolve beyond simple tool execution toward handling the inherent complexities of the open web. Current benchmarks bypass core cognitive hurdles: they fail to account for information noise, ignore multi-source factual contradictions, and overlook the necessity of grounding visual perception into logical planning. We introduce VeriTrip, a verifiable benchmark designed to meet the increasing demands for agent robustness and reliability. VeriTrip shifts the evaluation focus to evidence-grounded reasoning over unstructured multimodal web corpora. It establishes a Multimodal Retrieval Base (MRB) derived from real-world sources, forcing agents to autonomously orchestrate queries across heterogeneous data. A synchronized Verifiable Knowledge Base (VKB) enables a cell-wise verification protocol that precisely quantifies factual reliability, distinguishing systematic reasoning failures from parametric hallucinations. Our evaluations across leading MLLMs reveal a critical \textit{retrieval-reasoning trade-off}: the cognitive load of autonomous retrieval significantly erodes instruction retention. VeriTrip provides the rigorous foundation necessary for the next generation of planning agents capable of operating in unconstrained, multimodal environments.
 </dd><br>
 </i></div></details>
 Yuting Xu<sup>&#9839;</sup>, Jiayi Tian<sup>&#9839;</sup>, Jian Liang, Xin Xiong, Hang Zhang, Mu Xu, Xiao-Yu Zhang<sup>&copy;</sup><br>
@@ -842,7 +843,7 @@ Yongcan Yu, Lingxiao He, Jian Liang<sup>&copy;</sup>, Kuangpu Guo, Meng Wang, Qi
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Deep Research agents tackle knowledge-intensive tasks through multi-round retrieval and decision-oriented generation. However, these agents suffer from severe overconfidence, making their expressed confidence unreliable for user trust and downstream abstention. To address this, we augment the Deep Research pipeline with step confidence elicitation after each retrieval, building on the commonly used post-answer verbalized confidence. Interestingly, we find that Evidence Confidence (E-Conf), elicited after the final retrieval step, provides a stronger uncertainty signal than Answer Confidence (A-Conf), elicited after answer generation, and that A-Conf is largely shaped by E-Conf. Based on these findings, we propose DualStake, a dual-path calibration method that applies margin-clipped, confidence-dependent stake rewards to jointly align E-Conf and A-Conf with answer correctness while limiting extreme confidence optimization. Experiments on Qwen2.5-7B, Qwen2.5-7B-Instruct, and Qwen3-4B across 8 QA benchmarks demonstrate that DualStake consistently improves calibration without sacrificing answer accuracy.
 </dd><br>
 </i></div></details>
 Yinuo Xu, Yuwei Liang, Jianjie Cheng, Meng Wang, Yongcan Yu, Shuo Lu, Jian Liang<sup>&copy;</sup><br>
@@ -858,7 +859,7 @@ Yinuo Xu, Yuwei Liang, Jianjie Cheng, Meng Wang, Yongcan Yu, Shuo Lu, Jian Liang
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Large reasoning models have recently demonstrated remarkable capabilities in solving complex tasks, where supervised fine-tuning (SFT) on long chain-of-thought data serves as a crucial foundation for eliciting and enhancing their reasoning abilities. Despite rapid progress in both improving and analyzing reasoning-oriented SFT, the field still lacks a systematic survey that consolidates its fast-growing literature. To fill this gap, we present a comprehensive review of recent advancements in reasoning SFT, examining the literature through the dual lenses of methodological design and analytical investigation. First, we review methodological improvements across the SFT pipeline and categorize them into data-centric approaches and algorithm-centric innovations. Second, we reorganize analytical studies along three dimensions: data characteristics, optimization dynamics, and mechanistic insights. Finally, by synthesizing current research focuses and remaining bottlenecks, we outline promising future directions for reasoning SFT. We hope this survey deepens the understanding of reasoning SFT and paves the way for advanced reasoning models.
 </dd><br>
 </i></div></details>
 Yongcan Yu<sup>&#9839;</sup>, Kuangpu Guo<sup>&#9839;</sup>, Jian Liang<sup>&copy;</sup>, Lingxiao He, Meng Wang, Ran He<br>
@@ -874,7 +875,7 @@ Yongcan Yu<sup>&#9839;</sup>, Kuangpu Guo<sup>&#9839;</sup>, Jian Liang<sup>&cop
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Multimodal large language models (MLLMs) have achieved strong performance on perception-oriented tasks, yet their ability to perform mathematical spatial reasoning, defined as the capacity to parse and manipulate two- and three-dimensional relations, remains unclear. Humans easily solve textbook-style spatial reasoning problems with over 95% accuracy, but we find that most leading MLLMs fail to reach even 60% on the same tasks. This striking gap highlights spatial reasoning as a fundamental weakness of current models. To investigate this gap, we present MathSpatial, a unified framework for evaluating and improving spatial reasoning in MLLMs. MathSpatial includes three complementary components: (i) MathSpatial-Bench, a benchmark of 2K problems across three categories and eleven subtypes, designed to isolate reasoning difficulty from perceptual noise; (ii) MathSpatial-Corpus, a training dataset of 8K additional problems with verified solutions; and (iii) MathSpatial-SRT, which models reasoning as structured traces composed of three atomic operations—Correlate, Constrain, and Infer. Experiments show that fine-tuning Qwen2.5-VL-7B on MathSpatial achieves competitive accuracy while reducing tokens by 25%. MathSpatial provides the first large-scale resource that disentangles perception from reasoning, enabling precise measurement of spatial reasoning skills in MLLMs. More broadly, MathSpatial offers a comprehensive foundation for understanding how MLLMs handle mathematical spatial reasoning.
 </dd><br>
 </i></div></details>
 Shuo Lu<sup>&#9839;</sup>, Jianjie Cheng<sup>&#9839;</sup>, Yinuo Xu, Yongcan Yu, Lijun Sheng, Peijie Wang, Siru Jiang, Yongguan Hu, Lingxiao He, Meng Wang, Qianlong Xie, Xingxing Wang, Ran He, Jian Liang<sup>&copy;</sup><br>
@@ -890,7 +891,7 @@ Shuo Lu<sup>&#9839;</sup>, Jianjie Cheng<sup>&#9839;</sup>, Yinuo Xu, Yongcan Yu
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Advertising image generation has increasingly focused on online metrics like Click-Through Rate (CTR), yet existing approaches adopt a ``one-size-fits-all" strategy that optimizes for overall CTR while neglecting preference diversity among user groups. This leads to suboptimal performance for specific groups, limiting targeted marketing effectiveness. To bridge this gap, we present \textit{One Size, Many Fits} (OSMF), a unified framework that aligns diverse group-wise click preferences in large-scale advertising image generation. OSMF begins with product-aware adaptive grouping, which dynamically organizes users based on their attributes and product characteristics, representing each group with rich collective preference features. Building on these groups, preference-conditioned image generation employs a Group-aware Multimodal Large Language Model (G-MLLM) to generate tailored images for each group. The G-MLLM is pre-trained to simultaneously comprehend group features and generate advertising images. Subsequently, we fine-tune the G-MLLM using our proposed Group-DPO for group-wise preference alignment, which effectively enhances each group's CTR on the generated images. To further advance this field, we introduce the Grouped Advertising Image Preference Dataset (GAIP), the first large-scale public dataset of group-wise image preferences, including around 600K groups built from 40M users. Extensive experiments demonstrate that our framework achieves the state-of-the-art performance in both offline and online settings. 
 </dd><br>
 </i></div></details>
 Shuo Lu<sup>&#9839;</sup>, Haohan Wang<sup>&#9839;</sup>, Wei Feng, Weizhen Wang, Shen Zhang, Ke Cao, Jiahao Fan, Jingjing Lv, Changping Peng, Ching Law, Bing Zhan, Yuan Xu, Huizai Yao, Yongcan Yu, Chenyang Si, Jian Liang<sup>&copy;</sup><br>
@@ -906,7 +907,7 @@ Shuo Lu<sup>&#9839;</sup>, Haohan Wang<sup>&#9839;</sup>, Wei Feng, Weizhen Wang
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Unsupervised federated learning with Vision-Language Models (e.g., CLIP) offers a promising solution for label-free classification, yet its performance often degrades under severe non-IID shifts. A pioneering method, FedCoPL, typically relies on self-training strategies that exclusively prioritize high-confidence predictions for pseudo-labeling. However, this selective approach neglects the information of ambiguous samples (often referred to as “waist” samples), leading to the underutilization of data and biased decision boundaries. To address this limitation, we propose FedBST, a bilateral self-training framework that effectively exploits both high-confidence and ambiguous data. Specifically, for local optimization, we introduce uncertainty-aware confidence penalization (UACP). UACP targets ambiguous samples by penalizing overconfident predictions to implicitly promote higher uncertainty, thereby preventing erroneous pseudo-labeling. At inference, we employ a visual-text ensemble strategy. This approach aggregates uncertainty-aware local visual prototypes and ensembles them with textual prototypes, achieving lightweight adaptation to local distributions via prototype-based calibration. Experiments demonstrate that FedBST achieves consistent improvements over existing methods with standard federated aggregation protocols.
 </dd><br>
 </i></div></details>
 Aijing Yu, Kuangpu Guo, Jian Liang, Xiao-Yu Zhang<br>
@@ -921,7 +922,7 @@ Aijing Yu, Kuangpu Guo, Jian Liang, Xiao-Yu Zhang<br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Contrastive Language-Image Pre-training (CLIP) has shown superior performance in the image-level open-vocabulary classification task, benefiting from its powerful alignment of visual features and text embeddings. However, dense prediction tasks require models to perform pixel-level predictions, necessitating modifications to CLIP for region-text alignment. In this paper, we adjust the attention layers within the vanilla visual encoder of CLIP. With a novel attention calculation method for selective attention features, the model retains more regional semantic information. To further mitigate the negative impact of the modality gap, we introduce additional visual prototypes to refine the original predictor solely based on text embeddings. Specifically, patch features with confident predictions are selected to form an additional auxiliary memory-based classifier for more accurate prediction. We further integrate an optimizable feature extractor with an exponential moving average updating strategy to enhance prediction quality. Extensive experiments on 5 semantic segmentation datasets demonstrate the effectiveness of our method.
 </dd><br>
 </i></div></details>
 Aijing Yu, Zhengbo Wang, Lijun Sheng, Jian Liang, Xiao-Yu Zhang<br>
@@ -936,7 +937,7 @@ Aijing Yu, Zhengbo Wang, Lijun Sheng, Jian Liang, Xiao-Yu Zhang<br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Unsupervised Domain Adaptation (UDA) aims to mitigate performance degradation when training and testing data are sampled from different distributions. While significant progress has been made in enhancing overall accuracy, most existing methods overlook performance disparities across categories-an issue we refer to as category fairness. Our empirical analysis reveals that UDA classifiers tend to favor certain easy categories while neglecting difficult ones. To address this, we propose Virtual Label-distribution-aware Learning (VILL), a simple yet effective framework designed to improve worst-case performance while preserving high overall accuracy. The core of VILL is an adaptive re-weighting strategy that amplifies the influence of hard-to-classify categories. Furthermore, we introduce a KL-divergence-based re-balancing strategy, which explicitly adjusts decision boundaries to enhance category fairness. Experiments on commonly used datasets demonstrate that VILL can be seamlessly integrated as a plug-and-play module into existing UDA methods, significantly improving category fairness.
 </dd><br>
 </i></div></details>
 Yuguang Zhang, Lijun Sheng, Jian Liang<sup>&copy;</sup>, Ran He<br>
@@ -951,7 +952,7 @@ Yuguang Zhang, Lijun Sheng, Jian Liang<sup>&copy;</sup>, Ran He<br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Federated learning (FL) enables collaborative model training across decentralized clients without sharing local data, but is challenged by heterogeneity in data, computation, and communication. Pretrained vision-language models (VLMs), with their strong generalization and lightweight tuning via prompts, offer a promising solution. However, existing federated prompt-learning methods rely only on text prompts and overlook joint label-domain distribution shifts. In this paper, we propose a personalized FL framework based on dual-prompt learning and cross fusion, termed pFedDC. Specifically, each client maintains both global and local prompts across vision and language modalities: global prompts capture common knowledge shared across the federation, while local prompts encode client-specific semantics and domain characteristics. Meanwhile, a cross-fusion module is designed to adaptively integrate prompts from different levels, enabling the model to generate personalized representations aligned with each client's unique data distribution. Extensive experiments across nine datasets with various types of heterogeneity show that pFedDC consistently outperforms state-of-the-art methods.
 </dd><br>
 </i></div></details>
 Yuguang Zhang<sup>&#9839;</sup>, Kuangpu Guo<sup>&#9839;</sup>, Yunbo Wang, Jian Liang<sup>&copy;</sup><br>
@@ -967,7 +968,7 @@ Yuguang Zhang<sup>&#9839;</sup>, Kuangpu Guo<sup>&#9839;</sup>, Yunbo Wang, Jian
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Machine unlearning (MU) aims to remove the influence of specific data from a trained model without retraining from scratch. Existing approximate methods often operate in the full parameter space, making them prone to catastrophic degradation when the remaining data is limited. We propose Learnable Vector Arithmetic (LaVA), which decomposes unlearning into two task vectors—a forgetting vector and a remaining vector—obtained by subtracting the original model weights from models fine-tuned on the respective data subsets. These vectors are recombined with the original model via learnable layer-wise scaling coefficients, confining optimization to a low-dimensional space that enables stable forgetting and retention even with as little as 5% of the remaining data. Furthermore, we observe that the widely used accuracy gap metric fails to capture differences at the output distribution level. We adopt Jensen–Shannon (JS) divergence as the evaluation metric, which provides a fine-grained, bounded, and symmetric measure of distributional similarity between the unlearned model and the retrained model. Extensive experiments across three benchmarks and four forgetting scenarios demonstrate that LaVA consistently outperforms existing methods in both aggregate performance and distributional fidelity.
 </dd><br>
 </i></div></details>
 Yuting Xu<sup>&#9839;</sup>, Xiaokun Yang<sup>&#9839;</sup>, Jian Liang, Xiao-Yu Zhang<br>
@@ -982,7 +983,7 @@ Yuting Xu<sup>&#9839;</sup>, Xiaokun Yang<sup>&#9839;</sup>, Jian Liang, Xiao-Yu
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: While (multimodal) large language models (LLMs) have attracted widespread attention due to their exceptional capabilities, they remain vulnerable to jailbreak attacks. Various defense methods have been proposed to mitigate jailbreak attacks. These methods typically incorporate specific defense mechanisms into the model during training or deployment, aiming to enhance the LLM's robustness against jailbreak attacks in advance. However, as new jailbreak attack methods continue to emerge, defense methods with static resistance mechanisms can frequently be bypassed during testing. To address these limitations, we propose a defense framework, called Test-Time IMmunization (TTIM), which can adaptively defend against various jailbreak attacks through a self-evolving mechanism during testing. Specifically, TTIM first trains a gist token for efficient detection, which is subsequently employed to detect jailbreak activities during inference. When jailbreak attempts are detected, TTIM implements safety fine-tuning using the identified jailbreak instructions paired with refusal responses. Furthermore, to mitigate potential performance degradation of the detector caused by parameter updates during safety fine-tuning, we decouple the fine-tuning process from the detection module. Extensive experiments conducted on both LLMs and multimodal LLMs demonstrate that, starting from non-guarded models, TTIM effectively defends against various jailbreaks during testing with few jailbreak samples.
 </dd><br>
 </i></div></details>
 Yongcan Yu, Yanbo Wang, Yongguan Hu, Jian Liang<sup>&copy;</sup><br>
@@ -1030,7 +1031,7 @@ Jiyang Guan, Jian Liang, Yanbo Wang, Ran He<br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Out-of-distribution (OOD) detection aims to detect test samples outside the training category space, which is an essential component in building reliable machine learning systems. Existing reviews on OOD detection primarily focus on method taxonomy, surveying the field by categorizing various approaches. However, many recent works concentrate on non-traditional OOD detection scenarios, such as test-time adaptation, multi-modal data sources and other novel contexts. In this survey, we uniquely review recent advances in OOD detection from the task-oriented perspective for the first time. According to the user's access to the model, that is, whether the OOD detection method is allowed to modify or retrain the model, we classify the methods as training-driven or training-agnostic. Besides, considering the rapid development of pre-trained models, large pre-trained model-based OOD detection is also regarded as an important category and discussed separately. Furthermore, we provide a discussion of the evaluation scenarios, a variety of applications, and several future research directions. We believe this survey with new taxonomy will benefit the proposal of new methods and the expansion of more practical scenarios.
 </dd><br>
 </i></div></details>
 Shuo Lu<sup>&#9839;</sup>, Yingsheng Wang<sup>&#9839;</sup>, Lijun Sheng, Aihua Zheng, Lingxiao He, Jian Liang<sup>&copy;</sup><br>
@@ -1046,7 +1047,7 @@ Shuo Lu<sup>&#9839;</sup>, Yingsheng Wang<sup>&#9839;</sup>, Lijun Sheng, Aihua 
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Test-time adaptation (TTA) methods have gained significant attention for enhancing the performance of vision-language models (VLMs) such as CLIP during inference, without requiring additional labeled data. However, current TTA researches generally suffer from major limitations such as duplication of baseline results, limited evaluation metrics, inconsistent experimental settings, and insufficient analysis. These problems hinder fair comparisons between TTA methods and make it difficult to assess their practical strengths and weaknesses. To address these challenges, we introduce TTA-VLM, a comprehensive benchmark for evaluating TTA methods on VLMs. Our benchmark implements 8 episodic TTA and 7 online TTA methods within a unified and reproducible framework, and evaluates them across 15 widely used datasets. Unlike prior studies focused solely on CLIP, we extend the evaluation to SigLIP--a model trained with a Sigmoid loss--and include training-time tuning methods such as CoOp, MaPLe, and TeCoA to assess generality. Beyond classification accuracy, TTA-VLM incorporates various evaluation metrics, including robustness, calibration, out-of-distribution detection, and stability, enabling a more holistic assessment of TTA methods. Through extensive experiments, we find that 1) existing TTA methods produce limited gains compared to the previous pioneering work; 2) current TTA methods exhibit poor collaboration with training-time fine-tuning methods; 3) accuracy gains frequently come at the cost of reduced model trustworthiness. We release TTA-VLM to provide fair comparison and comprehensive evaluation of TTA methods for VLMs, and we hope it encourages the community to develop more reliable and generalizable TTA strategies.
 </dd><br>
 </i></div></details>
 Lijun Sheng, Jian Liang<sup>&copy;</sup>, Ran He, Zilei Wang, Tieniu Tan<br>
@@ -1110,7 +1111,7 @@ Yanbo Wang, Jiyang Guan, Jian Liang<sup>&copy;</sup>, Ran He<br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Unsupervised Federated Learning (UFL) aims to collaboratively train a global model across distributed clients without sharing data or accessing label information. Previous UFL works have predominantly focused on representation learning and clustering tasks. Recently, vision language models (e.g., CLIP) have gained significant attention for their powerful zero-shot prediction capabilities. Leveraging this advancement, classification problems that were previously infeasible under the UFL paradigm now present promising new opportunities, yet remain largely unexplored. In this paper, we extend UFL to the classification problem with CLIP for the first time and propose a novel method, Federated Cooperative Pseudo Labeling (FedCoPL). Specifically, clients estimate and upload their pseudo label distribution, and the server adjusts and redistributes them to avoid global imbalance among classes. Moreover, we introduce a partial prompt aggregation protocol for effective collaboration and personalization. In particular, visual prompts containing general image features are aggregated at the server, while text prompts encoding personalized knowledge are retained locally. Extensive experiments demonstrate the superior performance of our FedCoPL compared to baseline methods. 
 </dd><br>
 </i></div></details>
 Kuangpu Guo, Lijun Sheng, Yongcan Yu, Jian Liang<sup>&copy;</sup>, Zilei Wang, Ran He<br>
@@ -1132,7 +1133,8 @@ Abstract: Model adaptation tackles the distribution shift problem with a pre-tra
 Lijun Sheng, Jian Liang<sup>&copy;</sup>, Ran He, Zilei Wang, Tieniu Tan<br>
 <i>AAAI Conference on Artificial Intelligence (AAAI), 2025</i><br>
 <a href="https://arxiv.org/pdf/2401.06030.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2401.06030"><span id="paperlink">Link</span></a>
+<a href="https://ojs.aaai.org/index.php/AAAI/article/view/34250"><span id="paperlink">Link</span></a> /
+<a href="https://github.com/TomSheng21/DiffAdapt"><span id="papercode">Code</span></a>
 <br><br>
 
 
@@ -1147,7 +1149,7 @@ Abstract: Label skews, characterized by disparities in local label distribution 
 Kuangpu Guo, Yuhe Ding, Jian Liang<sup>&copy;</sup>, Ran He, Zilei Wang, Tieniu Tan<br>
 <i>AAAI Conference on Artificial Intelligence (AAAI), 2025</i><br>
 <a href="https://arxiv.org/pdf/2401.02329.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2401.02329"><span id="paperlink">Link</span></a> / 
+<a href="https://ojs.aaai.org/index.php/AAAI/article/view/33864"><span id="paperlink">Link</span></a> / 
 <a href="https://github.com/krumpguo/FedVLS"><span id="papercode">Code</span></a>
 <br><br>
 
@@ -1163,7 +1165,7 @@ Abstract: Layout generation plays a crucial role in enhancing both user experien
 Shuo Lu, Yanyin Chen, Wei Feng, Jiahao Fan, Fengheng Li, Zheng Zhang, Jingjing Lv, Junjie Shen, Ching Law, Jian Liang<sup>&copy;</sup><br>
 <i>ACM International Conference on Multimedia (ACM MM), 2025</i><br>
 <a href="https://arxiv.org/pdf/2508.02374.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2508.02374"><span id="paperlink">Link</span></a> / 
+<a href="https://dl.acm.org/doi/10.1145/3746027.3755064"><span id="paperlink">Link</span></a> / 
 <a href="https://github.com/JD-GenX/Uni-Layout"><span id="papercode">Code</span></a>
 <br><br>
 
@@ -1173,13 +1175,13 @@ Shuo Lu, Yanyin Chen, Wei Feng, Jiahao Fan, Fengheng Li, Zheng Zhang, Jingjing L
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Out-of-distribution (OOD) detection helps models identify data outside the training categories, crucial for security applications. While feature-based post-hoc methods address this by evaluating data differences in the feature space without changing network parameters, they often require access to training data, which may not be suitable for some data privacy scenarios. This may not be suitable in scenarios where data privacy protection is a concern. In this paper, we propose a simple yet effective post-hoc method, termed Classifier-based Feature Reconstruction (ClaFR), from the perspective of subspace projection. It first performs an orthogonal decomposition of the classifier’s weights to extract the class-known subspace, then maps the original data features into this subspace to obtain new data representations. Subsequently, the OOD score is determined by calculating the feature reconstruction error of the data within the subspace. Compared to existing OOD detection algorithms, our method does not require access to training data while achieving leading performance on multiple OOD benchmarks.
 </dd><br>
 </i></div></details>
 Yingsheng Wang, Shuo Lu, <b>Jian Liang<sup>&copy;</sup></b>, Aihua Zheng, Ran He<br>
 <i>Chinese Conference on Pattern Recognition and Computer Vision (PRCV), 2025</i><br>
 <a href="https://arxiv.org/pdf/2509.06988.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2509.06988"><span id="paperlink">Link</span></a> / 
+<a href="https://link.springer.com/chapter/10.1007/978-981-95-5702-8_6"><span id="paperlink">Link</span></a> / 
 <a href="https://github.com/Aie0923/ClaFR"><span id="papercode">Code</span></a>
 <br><br>
 
@@ -1189,13 +1191,14 @@ Yingsheng Wang, Shuo Lu, <b>Jian Liang<sup>&copy;</sup></b>, Aihua Zheng, Ran He
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Federated Learning (FL) allows collaborative machine learning training without sharing private data. Numerous studies have shown that one significant factor affecting the performance of federated learning models is the heterogeneity of data across different clients, especially when the data is sampled from various domains. A recent paper introduces variance-aware dual-level prototype clustering and uses a novel 
+-sparsity prototype loss, which increases intra-class similarity and reduces inter-class similarity. To ensure that the features converge within specific clusters, we introduce an improved algorithm, Federated Prototype Learning with Convergent Clusters, abbreviated as FedPLCC. To increase inter-class distances, we weight each prototype with the size of the cluster it represents. To reduce intra-class distances, considering that prototypes with larger distances might come from different domains, we select only a certain proportion of prototypes for the loss function calculation. Evaluations on the Digit-5, Office-10, and DomainNet datasets show that our method performs better than existing approaches.
 </dd><br>
 </i></div></details>
 Liang Kuang, Kuangpu Guo, <b>Jian Liang</b>, Jianguo Zhang<br>
 <i>Chinese Conference on Pattern Recognition and Computer Vision (PRCV), 2025</i><br>
 <a href="https://arxiv.org/pdf/2409.18578.pdf"><span id="paper">Paper</span></a> / 
-<a href="https://arxiv.org/abs/2409.18578"><span id="paperlink">Link</span></a> 
+<a href="https://link.springer.com/chapter/10.1007/978-981-95-5696-0_20"><span id="paperlink">Link</span></a> 
 <br><br>
 
 
@@ -1205,7 +1208,7 @@ Liang Kuang, Kuangpu Guo, <b>Jian Liang</b>, Jianguo Zhang<br>
 <br></summary>
 <div id="abstract"><i>
 <dd><br>
-Abstract: 
+Abstract: Federated learning aims to train models collaboratively across different clients without sharing data for privacy considerations. However, one major challenge for this learning paradigm is the data heterogeneity problem, which refers to the discrepancies between the local data distributions among various clients. To tackle this problem, we first study how data heterogeneity affects the representations of the globally aggregated models. Interestingly, we find that heterogeneous data results in the global model suffering from severe dimensional collapse, in which representations tend to reside in a lower-dimensional space instead of the ambient space. This dimensional collapse phenomenon severely curtails the expressive power of models, leading to significant degradation in the performance. Next, via experiments, we make more observations and posit two reasons that result in this phenomenon: 1) dimensional collapse on local models; 2) the operation of global averaging on local model parameters. In addition, we theoretically analyze the gradient flow dynamics to shed light on how data heterogeneity result in dimensional collapse. To remedy this problem caused by the data heterogeneity, we propose FedDecorr, a novel method that can effectively mitigate dimensional collapse in federated learning. Specifically, FedDecorr applies a regularization term during local training that encourages different dimensions of representations to be uncorrelated. FedDecorr, which is implementation-friendly and computationally-efficient, yields consistent improvements over various baselines on five standard benchmark datasets including CIFAR10, CIFAR100, TinyImageNet, Office-Caltech10, and DomainNet.
 </dd><br>
 </i></div></details>
 Yujun Shi, Jian Liang, Wenqing Zhang, Vincent Tan, Song Bai<br>
